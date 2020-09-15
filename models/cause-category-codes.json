@@ -1,0 +1,121 @@
+[
+  {
+    "id": 25,
+    "categoryCode": "A",
+    "categoryName": "Aikataulu ja liikennöinti",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 26,
+    "categoryCode": "E",
+    "categoryName": "Etuajassakulku",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 21,
+    "categoryCode": "H",
+    "categoryName": "Henkilökunta",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 34,
+    "categoryCode": "I",
+    "categoryName": "Muut syyt",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 41,
+    "categoryCode": "J",
+    "categoryName": "Junan muodostamisen viivästyminen",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 23,
+    "categoryCode": "K",
+    "categoryName": "Kalusto, moottorijunat ja vaunut",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 27,
+    "categoryCode": "L",
+    "categoryName": "Liikenteenhoito",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Matkustajapalvelu",
+      "en": "Passenger service",
+      "sv": "Passagerarservice"
+    },
+    "id": 33,
+    "categoryCode": "M",
+    "categoryName": "Matkustajapalvelu",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Onnettomuus",
+      "en": "An accident",
+      "sv": "En olycka"
+    },
+    "id": 32,
+    "categoryCode": "O",
+    "categoryName": "Onnettomuus",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 28,
+    "categoryCode": "P",
+    "categoryName": "Liikenteenhoitojärjestelmät",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 31,
+    "categoryCode": "R",
+    "categoryName": "Ratatyö",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 29,
+    "categoryCode": "S",
+    "categoryName": "Sähkörata",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 30,
+    "categoryCode": "T",
+    "categoryName": "Rata (ratarakenne)",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 24,
+    "categoryCode": "V",
+    "categoryName": "Vetokalusto",
+    "validFrom": "2017-01-01"
+  }
+]

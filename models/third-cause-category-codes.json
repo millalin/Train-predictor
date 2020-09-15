@@ -1,0 +1,2018 @@
+[
+  {
+    "id": 226,
+    "thirdCategoryCode": "A101",
+    "thirdCategoryName": "Kalusto, junakokoonpano",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Pudonneet lehdet",
+      "en": "Fallen leaves",
+      "sv": "Fallna löv"
+    },
+    "id": 227,
+    "thirdCategoryCode": "A102",
+    "thirdCategoryName": "Lehtikeli/liukkaus",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 228,
+    "thirdCategoryCode": "A103",
+    "thirdCategoryName": "Tilapäiset nopeusrajoitukset",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 229,
+    "thirdCategoryCode": "A104",
+    "thirdCategoryName": "Sähköradan tehonsyötön rajoitus",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 230,
+    "thirdCategoryCode": "A105",
+    "thirdCategoryName": "Turvalaitteista johtuva",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 231,
+    "thirdCategoryCode": "A106",
+    "thirdCategoryName": "Muu syy mäkeenjääntiin",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 232,
+    "thirdCategoryCode": "A201",
+    "thirdCategoryName": "Ajoajat ja/tai pysähdysajat kumulatiivisesti suunniteltua pidemmät",
+    "description": "Jos junan myöhästyminen kumuloituu vähän kerrassaan useamman asemavälin matkalla, eikä myöhästymiselle löydy syytä teknisestä viasta, matkustajaruuhkasta tai liikenneteknisistä syistä.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 233,
+    "thirdCategoryCode": "A202",
+    "thirdCategoryName": "Liian lyhyt kääntöaika",
+    "description": "Jos kääntöaika osoittautuu liian lyhyeksi.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Veturin vaihto",
+      "en": "A locomotive replacement",
+      "sv": "Ett lokomotiversättare"
+    },
+    "id": 234,
+    "thirdCategoryCode": "A203",
+    "thirdCategoryName": "Liian lyhyt veturin vaihtoaika",
+    "description": "Jos veturin vaihtoaika osoittautuu liian lyhyeksi.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 235,
+    "thirdCategoryCode": "A204",
+    "thirdCategoryName": "Liian raskas juna pysyäkseen aikataulussa",
+    "description": "Jos juna on niin raskas, ettei se kiihdy / pysähdy suunnitellusti. Liikenneohjaajan on varmistettava, ettei myöhästyminen johdu junan teknisestä viasta, veturin vaihdosta tai liukkaudesta.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 236,
+    "thirdCategoryCode": "A205",
+    "thirdCategoryName": "Muu aikataulusuunnittelun virhe",
+    "description": "Jos aikataulusuunnittelussa on muu selkeä virhe. Seliteeseen on kuvattava, minkälaisesta tapauksesta on kyse.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 79,
+    "thirdCategoryCode": "E101",
+    "thirdCategoryName": "Tulojuna etuajassa",
+    "description": "Jos juna on valmis lähtemään etuajassa, koska juna tai sen veturi on saapunut edelliseltä matkaltaan etuajassa. Lisätietona liikenneohjaajan tulee kirjata sen junan junanumero, josta kalusto saapui etuajassa.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 80,
+    "thirdCategoryCode": "E102",
+    "thirdCategoryName": "Kääntöajan alitus",
+    "description": "Jos juna on valmis lähtemään etuajassa, koska kääntyminen onnistui suunniteltua nopeammin.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 81,
+    "thirdCategoryCode": "E103",
+    "thirdCategoryName": "Valmistuminen etuajassa",
+    "description": "Jos kyseessä ei ole kääntyvä juna ja se on valmis lähtemään etuajassa. Esim. vaihtotöitä on selkeästi suunniteltua vähemmän.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 82,
+    "thirdCategoryCode": "E104",
+    "thirdCategoryName": "Junan priorisointi",
+    "description": "Jos juna lähetetään liikkeelle etuajassa liikenneteknisistä syistä. Esimerkiksi ratapihan ollessa täynnä juna lähetetään liikkeelle etuajassa, jotta toinen juna mahtuu ratapihalle. Lisätietona liikenneohjaaja kirjaa sen junan junanumeron, jonka takia kyseinen juna lähetettiin liikkeelle etuajassa. Jos on kyse laajemmasta kokonaisuudesta, niin liikenneohjaaja kirjaa selitteen tilanteesta.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 83,
+    "thirdCategoryCode": "E105",
+    "thirdCategoryName": "Muu syy etuajassalähtöön",
+    "description": "Jos etuajassa lähtöön on joku muu kuin yllä olevissa tarkenteissa mainittu syy. Tällainen syy voi olla esimerkiksi junan lähettäminen matkaan etuajassa ratatöiden järjestelyiden takia. Syy etuajassa lähtöön on kirjattava selkeästi selitekenttään. Jos syy liittyy ratatöihin, tulee selitteeseen kirjata ratatyön JETI-numero.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 237,
+    "thirdCategoryCode": "E201",
+    "thirdCategoryName": "Pieni junakoko",
+    "description": "Jos junan suunniteltua pienempi koko (pituus/paino) mahdollistaa aikataulua nopeamman kulun.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 238,
+    "thirdCategoryCode": "E202",
+    "thirdCategoryName": "Veturina kulku",
+    "description": "Jos pelkkä veturi ajetaan junalle suunnitellulla aikataululla ja se johtaa etuajassakulkuun.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 239,
+    "thirdCategoryCode": "E203",
+    "thirdCategoryName": "Junakohtaus/-ohitus ei toteutunut",
+    "description": "Jos aikatauluun suunniteltu junakohtaus tai -ohitus ei toteutunut. Esimerkiksi vastaan tuleva juna on peruttu.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 240,
+    "thirdCategoryCode": "E204",
+    "thirdCategoryName": "Muu poikkeama haetusta kapasiteetista",
+    "description": "Jos etuajassakulun syy on joku muu poikkeama haetusta kapasiteetista kuin muutos junan kokoonpanossa tai junakohtauksen / -ohituksen peruuntuminen. Esimerkiksi purku tai vaunujen jättö väliliikennepaikalla toteutuu suunniteltua nopeammin tai ei toteudu ollenkaan. Liikenneohjaaja kirjaa sanallisen selitteen tilanteesta, kun etuajassakulkuun on liikenneohjaajan tiedossa oleva selkeä syy. Tätä syykoodia käytetään myös, jos ajoajat ovat kumulatiivisesti suunniteltua lyhyemmät, vaikka junan kokoonpano ei ole muuttunut.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 201,
+    "thirdCategoryCode": "H101",
+    "thirdCategoryName": "Veturinkuljettaja puuttuu",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 202,
+    "thirdCategoryCode": "H102",
+    "thirdCategoryName": "Konduktööri puuttuu",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 203,
+    "thirdCategoryCode": "H103",
+    "thirdCategoryName": "Liikennöitsijän muun henkilökunnan puuttuminen",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 204,
+    "thirdCategoryCode": "H104",
+    "thirdCategoryName": "Veturinkuljettaja myöhässä olevasta junasta",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 205,
+    "thirdCategoryCode": "H105",
+    "thirdCategoryName": "Konduktööri myöhässä olevasta junasta",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 206,
+    "thirdCategoryCode": "H106",
+    "thirdCategoryName": "Liikennöitsijän muu henkilökuntaryhmä myöhässä olevasta junasta",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 207,
+    "thirdCategoryCode": "H301",
+    "thirdCategoryName": "Muu liikennöitsijän henkilökuntaan liittyvä syy",
+    "description": "Kun myöhästyminen johtuu muista liikennöitsijän henkilökuntaan liittyvistä syistä. Esim. junassa toimivan henkilökunnan sairastumiset / sairaskohtaukset matkan aikana, junassa toimivan henkilökunnan toimintavirheet (esim. kokoonpanotietojen toimittamisen unohtaminen tai operatiivisten laitteiden (RAILI- / VIRVE-puhelin tai KUPLA-päätelaite yms. puuttuminen))",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 208,
+    "thirdCategoryCode": "H302",
+    "thirdCategoryName": "Muun toimijan henkilökuntaan liittyvä syy",
+    "description": "Kun myöhästyminen johtuu muun toimijan henkilökuntaan liittyvistä syistä. Esim. vaihdemiehen puuttuminen tai kuljetusasiakkaan henkilökunnan toimintavirhe.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ilkivalta",
+      "en": "Vandalism",
+      "sv": "Skadegörelse"
+    },
+    "id": 326,
+    "thirdCategoryCode": "I301",
+    "thirdCategoryName": "Ilkivalta",
+    "description": "Jos myöhästyminen johtuu ilkivallasta, joka ei aiheuta teknistä vikaa ratalaitteisiin. Tällainen voi olla esimerkiksi radalle asetettu esine, jos juna ehtii pysähtyä ennen sitä tai törmäys siihen ei aiheuta kalustovikaa. POHA-tapahtuman selitteeseen kirjataan, minkälaisesta ilkivallasta on kyse, ja missä se on tapahtunut.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viranomaistehtävä",
+      "en": "An official duty",
+      "sv": "En officiell tjänst"
+    },
+    "id": 327,
+    "thirdCategoryCode": "I302",
+    "thirdCategoryName": "Asiaton radalla liikkuminen",
+    "description": "Jos myöhästyminen johtuu asiattomasta radalla (tai radan välittömässä läheisyydessä) liikkuvasta henkilöstä johtuvasta liikenteen keskeytyksestä tai nopeusrajoituksesta. POHA-tapahtuman selitteeseen kirjataan, missä asiaton radalla liikkuja on ollut ja aikaväli, jonka aikaa liikenne oli keskeytynyt.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viranomaistehtävä",
+      "en": "An official duty",
+      "sv": "En officiell tjänst"
+    },
+    "id": 328,
+    "thirdCategoryCode": "I303",
+    "thirdCategoryName": "Eläin radalla",
+    "description": "Kun myöhästyminen johtuu rata-alueella liikkuvan eläimen aiheuttamasta liikenteen keskeytyksestä tai nopeusrajoituksesta. POHA-tapahtuman selitteeseen kirjataan, millä liikennepaikkavälillä eläin on liikkunut ja aikaväli, jonka aikaa liikenne oli keskeytettynä.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 209,
+    "thirdCategoryCode": "J101",
+    "thirdCategoryName": "Vaunujen otto/jättö",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 210,
+    "thirdCategoryCode": "J102",
+    "thirdCategoryName": "Veturin kytkentä / irroitus",
+    "description": "Käytetään, kun junan muodostaminen viivästyy veturin kytkennän tai irroituksen vuoksi. Huom. Selitteeseen on kirjattava, onko kyseessä suunniteltu vai suunnittelematon kytkentä / irroitus.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Kaluston odotus",
+      "en": "Waiting for rolling stock",
+      "sv": "Väntar på rullande materiel"
+    },
+    "id": 211,
+    "thirdCategoryCode": "J103",
+    "thirdCategoryName": "Vaunujen tai veturin siirron viivästyminen",
+    "description": "Käytetään, kun junan muodostaminen viivästyy vaunujen tai veturin siirron viivästymisen vuoksi.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 212,
+    "thirdCategoryCode": "J104",
+    "thirdCategoryName": "Jarrujen koettelu",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 213,
+    "thirdCategoryCode": "J105",
+    "thirdCategoryName": "Häiriö päivystystyössä",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 214,
+    "thirdCategoryCode": "J106",
+    "thirdCategoryName": "Ylimääräinen vaihtotyö",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 215,
+    "thirdCategoryCode": "J107",
+    "thirdCategoryName": "Asiakkaan kuormaus- / purkutyö",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 216,
+    "thirdCategoryCode": "J108",
+    "thirdCategoryName": "Ratapihatyön suunnitteluvirhe",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 217,
+    "thirdCategoryCode": "J109",
+    "thirdCategoryName": "Muu syy",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 218,
+    "thirdCategoryCode": "K101",
+    "thirdCategoryName": "Kalustoa sitoutunut liikaa kunnossapitoon",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 219,
+    "thirdCategoryCode": "K102",
+    "thirdCategoryName": "Muu kalustopula",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 22,
+    "thirdCategoryCode": "K201",
+    "thirdCategoryName": "JKV-vika (moottorijuna)",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 23,
+    "thirdCategoryCode": "K202",
+    "thirdCategoryName": "Turvalaitevika (moottorijuna)",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 24,
+    "thirdCategoryCode": "K203",
+    "thirdCategoryName": "Ovivika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 25,
+    "thirdCategoryCode": "K204",
+    "thirdCategoryName": "Jarruvika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 26,
+    "thirdCategoryCode": "K205",
+    "thirdCategoryName": "Pääkatkaisijavika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 27,
+    "thirdCategoryCode": "K206",
+    "thirdCategoryName": "Laakerivika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 28,
+    "thirdCategoryCode": "K207",
+    "thirdCategoryName": "Lovipyörä",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 29,
+    "thirdCategoryCode": "K208",
+    "thirdCategoryName": "Virroitinvika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 30,
+    "thirdCategoryCode": "K209",
+    "thirdCategoryName": "Käyttäjävirhe",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 31,
+    "thirdCategoryCode": "K210",
+    "thirdCategoryName": "Junan katkeaminen",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 220,
+    "thirdCategoryCode": "K211",
+    "thirdCategoryName": "Vika ohjaamon kiinteässä viestintälaitteessa",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 33,
+    "thirdCategoryCode": "K212",
+    "thirdCategoryName": "Edo vika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 221,
+    "thirdCategoryCode": "K213",
+    "thirdCategoryName": "Muu kalustovika",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 35,
+    "thirdCategoryCode": "K301",
+    "thirdCategoryName": "Kiskojarrujen puute/Jarrupaino %",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 36,
+    "thirdCategoryCode": "K302",
+    "thirdCategoryName": "Korvaavan kaluston käyttö",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 37,
+    "thirdCategoryCode": "K303",
+    "thirdCategoryName": "Kallistusvika Sm3/Sm6",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 38,
+    "thirdCategoryCode": "K304",
+    "thirdCategoryName": "Ylipaino",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 39,
+    "thirdCategoryCode": "K305",
+    "thirdCategoryName": "Kalustovika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 40,
+    "thirdCategoryCode": "K306",
+    "thirdCategoryName": "Muu syy nopeuden alennukseen",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 41,
+    "thirdCategoryCode": "K401",
+    "thirdCategoryName": "Kytkentä, moottorijunat",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 42,
+    "thirdCategoryCode": "K402",
+    "thirdCategoryName": "Kytkentä, vaunut",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 43,
+    "thirdCategoryCode": "K403",
+    "thirdCategoryName": "Lumiperä",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 44,
+    "thirdCategoryCode": "K501",
+    "thirdCategoryName": "Irroitus, moottorijunat",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 45,
+    "thirdCategoryCode": "K502",
+    "thirdCategoryName": "Irroitus, vaunut",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Yhteysliikenteen odotus",
+      "en": "The train waiting for connecting services",
+      "sv": "Väntan på anslutande trafik"
+    },
+    "id": 88,
+    "thirdCategoryCode": "L101",
+    "thirdCategoryName": "Yhteysjunan odotus",
+    "description": "Jos odotetaan yhteysjunaa. Lisäselitteenä liikenneohjaaja kirjaa odotetun junan junanumeron.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Yhteysliikenteen odotus",
+      "en": "The train waiting for connecting services",
+      "sv": "Väntan på anslutande trafik"
+    },
+    "id": 89,
+    "thirdCategoryCode": "L102",
+    "thirdCategoryName": "Muu yhteysliikenteen odotus",
+    "description": "Jos odotetaan muuta yhteysliikennettä kuin junaa (taksit, bussit, laivat ym.). Liikenneohjaaja kirjaa lisätietona sanallisen selitteen tilanteesta. Jos odotetaan junan korvannutta taksia tai bussia, liikenneohjaaja kirjaa lisätietona korvatun junan numeron.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Muu junaliikenne",
+      "en": "Other train services",
+      "sv": "Annan tågtrafik"
+    },
+    "id": 90,
+    "thirdCategoryCode": "L201",
+    "thirdCategoryName": "Junakohtaus",
+    "description": "Jos juna joutuu junakohtauksessa odottamaan toista junaa suunniteltua pidempään (toinen juna on myöhässä) tai toteutuu suunnittelematon junakohtaus. Lisätietona kirjataan kohdatun junan junanumero.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Muu junaliikenne",
+      "en": "Other train services",
+      "sv": "Annan tågtrafik"
+    },
+    "id": 91,
+    "thirdCategoryCode": "L202",
+    "thirdCategoryName": "Toisen junan edelle päästäminen",
+    "description": "Jos juna joutuu päästämään toisen junan edelleen. Lisätietona kirjataan edelle päästetyn junan junanumero.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Muu junaliikenne",
+      "en": "Other train services",
+      "sv": "Annan tågtrafik"
+    },
+    "id": 92,
+    "thirdCategoryCode": "L203",
+    "thirdCategoryName": "Edellä kulkevan junan ohitus",
+    "description": "Jos juna joutuu ohittamaan edellä kulkevan hitaamman junan. Lisätietona kirjataan ohitetun junan junanumero.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Muu junaliikenne",
+      "en": "Other train services",
+      "sv": "Annan tågtrafik"
+    },
+    "id": 93,
+    "thirdCategoryCode": "L204",
+    "thirdCategoryName": "Edellä kulkeva juna",
+    "description": "Jos juna myöhästyy sen takia, että edellä kulkee hitaampi juna, eikä sitä pystytä ohittamaan seurantavälin aikana. Lisätietona kirjataan edellä kulkeneen junan junanumero.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Vapautuvan raiteen odotus",
+      "en": "Waiting for a vacant track",
+      "sv": "Väntar på en ledig bana"
+    },
+    "id": 94,
+    "thirdCategoryCode": "L301",
+    "thirdCategoryName": "Tuloraide varattu",
+    "description": "Jos juna joutuu odottamaan sopivan tuloraiteen vapautumista saapuessaan asemalle. Jos kyseessä on linjalla ohitus tai kohtausraide on varattu, käytetään L2-koodia. Lisätietona liikenneohjaaja kirjaa suunnitellun tuloraiteen varanneen junan junanumeron. Lisäksi raidenumero on suositeltava selite, jos se on tiedossa.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ruuhkautunut rataosa",
+      "en": "A congested line section",
+      "sv": "Ett överbelastat linjesnitt"
+    },
+    "id": 95,
+    "thirdCategoryCode": "L302",
+    "thirdCategoryName": "Risteävät kulkutiet",
+    "description": "Jos myöhästyminen johtuu risteävistä kulkuteistä asemalla tai ratapihalla (junan pituus, päällekkäiset kulkutiet, ohiajovarat, turvalaitteiden toteutukset). Jos kyse on junakohtauksesta tai ohituksesta linjalla, käytetään L2-syykoodia ja sen 2-tason tarkenteita. Lisätietona liikenneohjaaja kirjaa sen junan junanumeron, jonka kanssa kulkutiet ristesivät. Lisäksi raidenumero on suositeltava selite, jos se on tiedossa.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ruuhkautunut rataosa",
+      "en": "A congested line section",
+      "sv": "Ett överbelastat linjesnitt"
+    },
+    "id": 96,
+    "thirdCategoryCode": "L303",
+    "thirdCategoryName": "Ahtaus ratapihalla",
+    "description": "Jos juna joutuu odottamaan ratapihalle pääsyä sen ruuhkautumisen takia (esim. kaluston seisotuksen, rikkinäisen kaluston, vaihtotyön tai poikkeuksellisen liikennetilanteen vuoksi). Liikenneohjaaja kirjaa selitteeseen liikennepaikan tai ratapihan, jossa ahtaus on ollut. Jos kaikki sopivat tuloraiteet ovat hetkellisesti varattuna edellisten junien takia, käytetään syykoodia L301 (Tuloraide varattu). Lisäksi raidenumero on suositeltava selite, jos se on tiedossa.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ruuhkautunut rataosa",
+      "en": "A congested line section",
+      "sv": "Ett överbelastat linjesnitt"
+    },
+    "id": 97,
+    "thirdCategoryCode": "L304",
+    "thirdCategoryName": "Suunnitteluvirhe",
+    "description": "Jos havaitaan selkeä suunnitteluvirhe, joka johtaa konfliktiin kapasiteetissa. Esimerkiksi ratatyön takia ei ole käytössä riittävän pitkää sivuraidetta junakohtauksen toteuttamiseksi suunnitellussa paikassa. Lisätietona liikenneohjaaja kirjaa toisen tilanteessa mukana olleen junan junanumeron sekä sanallisen selitteen tilanteesta. Lisäksi raidenumero on suositeltava selite, jos se on tiedossa.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Radalle rikkoutunut juna",
+      "en": "A broken train on the track",
+      "sv": "Tågfel på banan"
+    },
+    "id": 98,
+    "thirdCategoryCode": "L501",
+    "thirdCategoryName": "Kalusto rikki",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Radalle rikkoutunut juna",
+      "en": "A broken train on the track",
+      "sv": "Tågfel på banan"
+    },
+    "id": 99,
+    "thirdCategoryCode": "L502",
+    "thirdCategoryName": "Ei-kaupallinen juna tai ratatyökone rikki",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Radalle rikkoutunut juna",
+      "en": "A broken train on the track",
+      "sv": "Tågfel på banan"
+    },
+    "id": 100,
+    "thirdCategoryCode": "L503",
+    "thirdCategoryName": "Mäkeenjäänti",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Radalle rikkoutunut juna",
+      "en": "A broken train on the track",
+      "sv": "Tågfel på banan"
+    },
+    "id": 101,
+    "thirdCategoryCode": "L504",
+    "thirdCategoryName": "Onnettomuus",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Kaluston odotus",
+      "en": "Waiting for rolling stock",
+      "sv": "Väntar på rullande materiel"
+    },
+    "id": 241,
+    "thirdCategoryCode": "L601",
+    "thirdCategoryName": "Odotetaan koko junaa sen edelliseltä matkalta",
+    "description": "Jos juna ei pääse lähtemään ajoissa, koska käytettävä runko saapui myöhässä edelliseltä matkaltaan (koko junarungon kääntö).",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Kaluston odotus",
+      "en": "Waiting for rolling stock",
+      "sv": "Väntar på rullande materiel"
+    },
+    "id": 242,
+    "thirdCategoryCode": "L602",
+    "thirdCategoryName": "Odotetaan yhdistettävää runkoa",
+    "description": "Jos odotetaan väliasemalla myöhässä olevaa junaa runkojen yhdistämistä varten (yhdistettävät matkustajajunat).",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Kaluston odotus",
+      "en": "Waiting for rolling stock",
+      "sv": "Väntar på rullande materiel"
+    },
+    "id": 243,
+    "thirdCategoryCode": "L603",
+    "thirdCategoryName": "Veturin odotus myöhässä olevasta junasta",
+    "description": "Jos suunniteltuun veturikiertoon liittyen odotetaan veturia myöhässä olevasta junasta.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Kaluston odotus",
+      "en": "Waiting for rolling stock",
+      "sv": "Väntar på rullande materiel"
+    },
+    "id": 244,
+    "thirdCategoryCode": "L604",
+    "thirdCategoryName": "Saaton viivästyminen johtuen kalusto- tai veturiviasta",
+    "description": "Jos myöhästyminen johtuu kyseisen junan saaton viivästymisestä johtuen kaluston tai veturin vikaantumisesta ja/tai siihen liittyvästä kaluston tai veturin vaihdosta.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Kaluston odotus",
+      "en": "Waiting for rolling stock",
+      "sv": "Väntar på rullande materiel"
+    },
+    "id": 245,
+    "thirdCategoryCode": "L605",
+    "thirdCategoryName": "Saaton viivästyminen johtuen junanmuodostuksesta",
+    "description": "Jos myöhästyminen johtuu kyseisen junan saattoon liittyvän junanmuodostuksen viivästymisestä.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Kaluston odotus",
+      "en": "Waiting for rolling stock",
+      "sv": "Väntar på rullande materiel"
+    },
+    "id": 246,
+    "thirdCategoryCode": "L606",
+    "thirdCategoryName": "Saaton viivästyminen johtuen infraviasta",
+    "description": "Kirjataan lähtevän junan myöhästymiselle, kun myöhästymissyynä on kyseisen junan saaton viivästyminen infravian takia.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Kaluston odotus",
+      "en": "Waiting for rolling stock",
+      "sv": "Väntar på rullande materiel"
+    },
+    "id": 247,
+    "thirdCategoryCode": "L607",
+    "thirdCategoryName": "Saaton viivästyminen johtuen muusta liikenteestä",
+    "description": "Kirjataan lähtevän junan myöhästymiselle, kun myöhästymissyynä on kyseisen junan saaton viivästyminen johtuen muusta liikenteestä saaton aikana.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 248,
+    "thirdCategoryCode": "L608",
+    "thirdCategoryName": "Junan lähtöön liittyvä muu odotus",
+    "description": "Jos junan lähtöön liittyvän odotuksen syylle ei ole L6-syykoodin alla muuta sopivaa 2-tason syykoodia, eikä muualla syykoodistossa ole muuta tilanteeseen sopivaa syykoodia. Tällainen voi olla esimerkiksi junan ravintolapalveluun liittyvän kuormauksen tai siivouksen viivästymisestä aiheutuva odotus. Huom. Syykoodia saa käyttää vain alueohjauksen luvalla.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 249,
+    "thirdCategoryCode": "L701",
+    "thirdCategoryName": "Reititysvirhe normaalissa liikennetilanteessa",
+    "description": "Jos normaalissa liikennetilanteessa juna myöhästyy reititysvirheen takia. Esimerkiksi matkustajajunan reititys on tehty raiteelle, jolla ei ole laituria.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 250,
+    "thirdCategoryCode": "L702",
+    "thirdCategoryName": "Reititysvirhe poikkeustilanteessa",
+    "description": "Jos poikkeustilanteessa tapahtuu virheellinen reititys. Esimerkiksi käytetään normaalitilanteen mukaista automatiikkaa.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 251,
+    "thirdCategoryCode": "L703",
+    "thirdCategoryName": "Liikenneohjaajan virhe",
+    "description": "Jos kyseessä on muu liikenneohjaajan toimintaan liittyvä virhe kuin reititysvirhe.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 252,
+    "thirdCategoryCode": "L704",
+    "thirdCategoryName": "Määrittelyvirhe automatiikassa",
+    "description": "Jos havaitaan virhe liikenteenohjausautomatiikassa. Selitteessä on kerrottava selkeästi, missä ja miten automatiikkavirhe esiintyi.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 253,
+    "thirdCategoryCode": "L705",
+    "thirdCategoryName": "Muu liikenteenhoidosta johtuva myöhästyminen",
+    "description": "Jos havaitaan liikenteenhoidosta johtuva muu poikkeama (esimerkiksi pitkäksi mennyt vuoronvaihto) kuin edellä luetellut. Selitteessä on kerrottava selkeästi, minkälaisesta tilanteesta oli kyse. Huom. Syykoodia saa käyttää vain alueohjauksen luvalla.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Matkustajapalvelu",
+      "en": "Passenger service",
+      "sv": "Passagerarservice"
+    },
+    "id": 316,
+    "thirdCategoryCode": "M101",
+    "thirdCategoryName": "Matkustajaruuhka",
+    "description": "Jos pysähtymisajan ylitys johtuu matkustajaruuhkasta.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ilkivalta",
+      "en": "Vandalism",
+      "sv": "Skadegörelse"
+    },
+    "id": 317,
+    "thirdCategoryCode": "M102",
+    "thirdCategoryName": "Matkustajan aiheuttama häiriö",
+    "description": "Jos pysähtymisajan ylitys johtuu matkustajan aiheuttamasta häiriöstä (esimerkiksi väkivaltaisesti käyttäytyvän matkustajan poistaminen junasta).",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Potilaskuljetuksen odotus",
+      "en": "Waiting for transport of patient",
+      "sv": "Väntar på transport av patient"
+    },
+    "id": 318,
+    "thirdCategoryCode": "M103",
+    "thirdCategoryName": "Matkustajan loukkaantuminen tai sairaskohtaus",
+    "description": "Jos pysähtymisajan ylitys johtuu matkustajan loukkaantumisesta tai sairaskohtauksesta.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Matkustajapalvelu",
+      "en": "Passenger service",
+      "sv": "Passagerarservice"
+    },
+    "id": 319,
+    "thirdCategoryCode": "M104",
+    "thirdCategoryName": "Passi- ja tullitarkastus",
+    "description": "Jos pysähtymisajan ylitys johtuu passi- ja tullitarkastuksesta.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Matkustajapalvelu",
+      "en": "Passenger service",
+      "sv": "Passagerarservice"
+    },
+    "id": 320,
+    "thirdCategoryCode": "M105",
+    "thirdCategoryName": "Vankien kuormaus ja purku",
+    "description": "Jos pysähtymisajan ylitys johtuu vankien kuormauksesta tai purusta.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Matkustajapalvelu",
+      "en": "Passenger service",
+      "sv": "Passagerarservice"
+    },
+    "id": 321,
+    "thirdCategoryCode": "M106",
+    "thirdCategoryName": "Matkustajan avustaminen",
+    "description": "Jos pysähtymisajan ylitys johtuu matkustajan avustamisesta.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 322,
+    "thirdCategoryCode": "M107",
+    "thirdCategoryName": "Ovien sulkeminen",
+    "description": "Jos pysähtymisajan ylitys johtuu ovien sulkemisesta. Tällä tarkoitetaan tilannetta, jossa käytetään sellaista kalustoa jossa ovet joudutaan sulkemaan käsin. Jos kyse on oviviasta, jonka takia ovi/ovet eivät sulkeudu automaattisesti, niin kirjaukset tark_syykoodille K203 (Ovivika).",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Matkustajapalvelu",
+      "en": "Passenger service",
+      "sv": "Passagerarservice"
+    },
+    "id": 323,
+    "thirdCategoryCode": "M108",
+    "thirdCategoryName": "Matkustajien odotus raidemuutoksen vuoksi",
+    "description": "Jos matkustajien siirtyminen junaan kestää odotettua kauemmin raidemuutoksen vuoksi.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Matkustajapalvelu",
+      "en": "Passenger service",
+      "sv": "Passagerarservice"
+    },
+    "id": 324,
+    "thirdCategoryCode": "M109",
+    "thirdCategoryName": "Matkustajien odotus kalustomuutoksen vuoksi",
+    "description": "Jos korvaavan tai vajaan kaluston käytön takia matkustajien siirtyminen junaan kestää suunniteltua kauemmin.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Pitkittynyt pysähdys",
+      "en": "A prolonged stop",
+      "sv": "Ett förlängt stopp"
+    },
+    "id": 325,
+    "thirdCategoryCode": "M110",
+    "thirdCategoryName": "Muu syy pysähtymisajan ylitykselle",
+    "description": "Jos matkustajajunan pysähtymisajan ylitykselle ei löydy sopivaa selitettä muista tämän syykoodin 2-tason tarkenteista. Tätä tarkennetta käytettäessä kirjataan sanallinen selite syystä.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Onnettomuus",
+      "en": "An accident",
+      "sv": "En olycka"
+    },
+    "id": 168,
+    "thirdCategoryCode": "O401",
+    "thirdCategoryName": "Suistuminen ratapihalla",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Onnettomuus",
+      "en": "An accident",
+      "sv": "En olycka"
+    },
+    "id": 169,
+    "thirdCategoryCode": "O402",
+    "thirdCategoryName": "Suistuminen linjalla",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Onnettomuus",
+      "en": "An accident",
+      "sv": "En olycka"
+    },
+    "id": 170,
+    "thirdCategoryCode": "O403",
+    "thirdCategoryName": "Tulipalot, metsäpalot",
+    "description": "Jos radalla tai radan läheisyydessä oleva tulipalo aiheuttaa liikenteen keskeytyksen tai nopeusrajoituksen.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Onnettomuus",
+      "en": "An accident",
+      "sv": "En olycka"
+    },
+    "id": 171,
+    "thirdCategoryCode": "O404",
+    "thirdCategoryName": "Junan törmäys muuhun kalustoon",
+    "description": "Jos juna törmää toiseen junaan tai muuhun radalla liikkuvaan/seisovaan kalustoon (työkoneet jne.)",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Onnettomuus",
+      "en": "An accident",
+      "sv": "En olycka"
+    },
+    "id": 172,
+    "thirdCategoryCode": "O405",
+    "thirdCategoryName": "Muu onnettomuus",
+    "description": "Jos kyse on onnettomuudesta, jolle ei ole omaa 2-tason tarkennetta. Selitteeseen kirjataan, mikä onnettomuus oli kyseessä.",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 254,
+    "thirdCategoryCode": "P101",
+    "thirdCategoryName": "JKV / ERTMS-vika",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 255,
+    "thirdCategoryCode": "P102",
+    "thirdCategoryName": "Baliisi",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 256,
+    "thirdCategoryCode": "P103",
+    "thirdCategoryName": "Asetinlaite",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 257,
+    "thirdCategoryCode": "P104",
+    "thirdCategoryName": "Suojastus",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 258,
+    "thirdCategoryCode": "P105",
+    "thirdCategoryName": "Raidevirtapiiri",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 259,
+    "thirdCategoryCode": "P106",
+    "thirdCategoryName": "Akselinlaskenta",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 260,
+    "thirdCategoryCode": "P107",
+    "thirdCategoryName": "Kauko-ohjauksen rajapintaviat",
+    "description": "Jos kyse on kauko-ohjauksen viasta, joka kohdistuu radanpitäjän omistamiin komponentteihin kauko-ohjauksen ja asetinlaitteiden rajapinnassa.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 261,
+    "thirdCategoryCode": "P108",
+    "thirdCategoryName": "Opastin",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 262,
+    "thirdCategoryCode": "P109",
+    "thirdCategoryName": "Vaihde",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 263,
+    "thirdCategoryCode": "P110",
+    "thirdCategoryName": "Tasoristeyslaitos",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 264,
+    "thirdCategoryCode": "P111",
+    "thirdCategoryName": "Avattava silta",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 265,
+    "thirdCategoryCode": "P112",
+    "thirdCategoryName": "Tiedonsiirto",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 266,
+    "thirdCategoryCode": "P113",
+    "thirdCategoryName": "Virransyöttö",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 267,
+    "thirdCategoryCode": "P114",
+    "thirdCategoryName": "Laskumäkilaitteisto",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 268,
+    "thirdCategoryCode": "P115",
+    "thirdCategoryName": "Tunnelitekniset järjestelmät",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 269,
+    "thirdCategoryCode": "P116",
+    "thirdCategoryName": "Muut kuin radanpidon vastuulla olevat laiteviat",
+    "description": "Jos kyse on muun tahon (liikennöitsijä) vastuulla olevan laitteen viasta, niin liikenteenohjaus luo POHA-tapahtuman ja täydentää siihen tämän 2-tason tarkenteen.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 270,
+    "thirdCategoryCode": "P117",
+    "thirdCategoryName": "Muut laiteviat",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 271,
+    "thirdCategoryCode": "P201",
+    "thirdCategoryName": "Lähtötietojen puuttuminen",
+    "description": "Jos junan lähtö viivästyy lähtötietojen (kokoonpano tai aikataulu) puuttumisen takia. Ensikirjausta tehdessä ei tarvitse määrittää POHA-tapahtumaan, missä järjestelmässä vika on, vaan se tarkennetaan selitteeseen asian varmistuttua.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 272,
+    "thirdCategoryCode": "P202",
+    "thirdCategoryName": "Tekninen vika lähtövalmiusilmoituksen tekemisessä",
+    "description": "Jos lähtövalmiusilmoitusta ei saada tehtyä esimerkiksi liikennöitsijän järjestelmissä ilmenevien teknisten ongelmien takia. Jos kyse on siitä, ettei junahenkilökunta tee ilmoitusta ajallaan, käytetään syykoodia H2.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 273,
+    "thirdCategoryCode": "P203",
+    "thirdCategoryName": "Muu liikennöitsijän vastuulla oleva tietojärjestelmähäiriö",
+    "description": "Käytetään, kun häiriö on muussa liikennöitsijän vastuulla olevassa tietojärjestelmässä kuin lähtövalmiusilmoituksen tekemiseen tai lähtötietojen toimittamiseen liittyvässä järjestelmässä. POHA-tapahtuman selitteeseen kirjataan, mistä järjestelmästä on kyse.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 274,
+    "thirdCategoryCode": "P204",
+    "thirdCategoryName": "Ulkopuolisen tahon vastuulla oleva tietojärjestelmähäiriö",
+    "description": "Junien kulkuun aiheutuu viiveitä ulkopuolisen tahon vastuulla olevien tietojärjestelmien vikojen vuoksi. Tällaiseksi voidaan laskea esimerkiksi ongelmat kuljetusasiakkaan järjestelmissä tai KUPLAn verkkoyhteydessä, jos vika on verkkoyhteyden tarjoavassa operaattorin järjestelmissä.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 275,
+    "thirdCategoryCode": "P205",
+    "thirdCategoryName": "Liikenteenhallinnan järjestelmien konesalipalvelut",
+    "description": "Viat, jotka aiheutuvat palvelinympäristöjen laitevioista.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 276,
+    "thirdCategoryCode": "P206",
+    "thirdCategoryName": "Liikenteenhallinnan järjestelmien tietoliikennepalvelut",
+    "description": "Viat, jotka aiheutuvat Finrailin järjestelmien välisten palveluiden tietoliikenneongelmista. Huom. Liikennöitsijän tai ulkoisen toimijan tietoliikenneongelmat kirjataan syykoodeille P203 ja P204.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 277,
+    "thirdCategoryCode": "P207",
+    "thirdCategoryName": "Liikenteenhallinnan järjestelmien työasemat ja laitteet",
+    "description": "Viat, jotka aiheutuvat liikenteenohjauksen käyttämien työasemien ja laitteiden ongelmista. Näillä tarkoitetaan esim. työasemia, joilla käytetään LOKIa ja REAALI++:aa. Huom. Kauko-ohjauksen työasemien viat kirjataan kunkin kauko-ohjausjärjestelmän alle (syykoodit P212-P216).",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 278,
+    "thirdCategoryCode": "P208",
+    "thirdCategoryName": "Integraatiopalvelu",
+    "description": "Käytetään, jos junaliikenteeseen aiheutuu häiriöitä, koska Finrailin vastuulla olevassa integraatiopalvelussa (RIPA) on toimintahäiriö, joka estää sanomien välittämisen liikennöitsijöiltä Finrailin järjestelmiin tai päinvastoin. Huom. Mikäli ongelma on liikennöitsijän integraatioissa, käytetään koodia P203.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 279,
+    "thirdCategoryCode": "P209",
+    "thirdCategoryName": "Liikenteenohjauksen tietojärjestelmät",
+    "description": "Käytetään, jos junaliikenteeseen aiheutuu häiriöitä liikenteenohjauksen tietojärjestelmien vuoksi. Tähän kuuluvat mm. LOKI, REAALI++, Raidetyökalu (liikenteenohjauksen käyttämänä), KUTI, YKÄ, ENNE ja RAISA. Huom. Kauko-ohjaukseen liittyvät viat kirjataan kunkin kauko-ohjausjärjestelmän alle (syykoodit P212-P216).",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 280,
+    "thirdCategoryCode": "P210",
+    "thirdCategoryName": "Kapasiteetinhallinnan tietojärjestelmät",
+    "description": "Käytetään, kun junaliikenteeseen aiheutuu häiriöitä kapasiteetinhallinnan järjestelmistä. Näitä ovat esimerkiksi LIIKE, Raidetyökalu (operaattorin käyttämänä) sekä MOKA.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 281,
+    "thirdCategoryCode": "P211",
+    "thirdCategoryName": "Radanpidolle ja liikennöitsijöille suunnatut tietojärjestelmät",
+    "description": "Kun häiriö on radanpitoon ja operaattoreille tarkoitetussa järjestelmässä tai sovelluksessa. Näitä ovat esimerkiksi JETI, RUMA, POHA ja KUPLA.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 282,
+    "thirdCategoryCode": "P212",
+    "thirdCategoryName": "Kauko-ohjausjärjestelmä, ESKO",
+    "description": "Kun vika tai häiriö on Etelä-Suomen kauko-ohjausjärjestelmässä ESKOssa.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 283,
+    "thirdCategoryCode": "P213",
+    "thirdCategoryName": "Kauko-ohjausjärjestelmä, TAKO",
+    "description": "Kun vika tai häiriö on Länsi-Suomen kauko-ohjausjärjestelmässä TAKOssa.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 284,
+    "thirdCategoryCode": "P214",
+    "thirdCategoryName": "Kauko-ohjausjärjestelmä, KAKO",
+    "description": "Kun vika tai häiriö on Kaakkois-Suomen kauko-ohjausjärjestelmässä KAKOssa.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 285,
+    "thirdCategoryCode": "P215",
+    "thirdCategoryName": "Kauko-ohjausjärjestelmä, Mipron MiSO-järjestelmä",
+    "description": "Kun vika tai häiriö on Mipro Oy:n MiSO-järjestelmässä.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 286,
+    "thirdCategoryCode": "P216",
+    "thirdCategoryName": "Kauko-ohjausjärjestelmä, Kaakon alueen muut ohjausjärjestelmät",
+    "description": "Kun vika tai häiriö on Kaakon alueen muissa ohjausjärjestelmissä kuin edellä luetelluissa kauko-ohjausjärjestelmissä.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 287,
+    "thirdCategoryCode": "P217",
+    "thirdCategoryName": "Muut liikenteenohjauksen vastuulla olevat tietojärjestelmähäiriöt",
+    "description": "Viat, joiden juurisyystä ei ole ensivaiheessa tietoa, voidaan kirjata tälle koodille. Huom. Koodi täytyy muuttaa mahdollisimman pian oikeaksi, kun juurisyy on selvinnyt.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 288,
+    "thirdCategoryCode": "P301",
+    "thirdCategoryName": "Kuumakäynti-ilmaisin vika / aiheeton hälytys",
+    "description": "Tarkenteena käytetään sitä ilmaisinta jossa vika ilmenee tai joka antaa aiheettoman hälytyksen.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 289,
+    "thirdCategoryCode": "P302",
+    "thirdCategoryName": "Pyörävoimailmaisin vika / aiheeton hälytys",
+    "description": "Tarkenteena käytetään sitä ilmaisinta jossa vika ilmenee tai joka antaa aiheettoman hälytyksen.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 290,
+    "thirdCategoryCode": "P303",
+    "thirdCategoryName": "Virrotinkamera vika / aiheeton hälytys",
+    "description": "Tarkenteena käytetään sitä ilmaisinta jossa vika ilmenee tai joka antaa aiheettoman hälytyksen.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 291,
+    "thirdCategoryCode": "P304",
+    "thirdCategoryName": "Muut liikkuvan kaluston valvontalaitehäiriöt",
+    "description": "Jos virheellisen ilmoituksen antanutta liikkuvan kaluston valvontalaitetta ei ole 2-tason tarkenteissa.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 292,
+    "thirdCategoryCode": "P401",
+    "thirdCategoryName": "RAILI-palvelu",
+    "description": "Jos vika tai häiriö on RAILI- tai VIRVE-puhelimissa tai rautatieliikenteen puheviestintäpalvelun (RAILI-palvelu) verkkoyhteydessä. POHA-tapahtumaan kirjataan mahdollisimman tarkasti, minkälaisesta viasta tai häiriöstä on ollut kyse.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 293,
+    "thirdCategoryCode": "P402",
+    "thirdCategoryName": "Liikenteenohjauksen viestintävälineet",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 294,
+    "thirdCategoryCode": "P403",
+    "thirdCategoryName": "Muut viestintälaite / -yhteysviat",
+    "description": "Tätä 2-tason syykoodia käytetään, jos vikaantunutta viestintälaitetta tai yhteyttä ei ole 2-tason syykoodeissa.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 310,
+    "thirdCategoryCode": "R201",
+    "thirdCategoryName": "Konerikko tms.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 311,
+    "thirdCategoryCode": "R202",
+    "thirdCategoryName": "Sääolosuhteet",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 312,
+    "thirdCategoryCode": "R203",
+    "thirdCategoryName": "Henkilöresurssit",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 313,
+    "thirdCategoryCode": "R204",
+    "thirdCategoryName": "Ratatyön suunnitteluvirhe",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 314,
+    "thirdCategoryCode": "R205",
+    "thirdCategoryName": "Ratatyö alkanut myöhässä liikenteen takia",
+    "description": "Jos ratatyön sovittu aika ylittyy sen takia, että työn alkua on päätetty siirtää myöhässä olevan liikenteen takia. POHA-tapahtuman selitteeseen kirjataan sen junan junanumero, jota odotettiin.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 315,
+    "thirdCategoryCode": "R206",
+    "thirdCategoryName": "Muut syyt sovitun ajan ylitykseen",
+    "description": "Jos ratatyön sovitun ajan ylitykselle ei ole erillistä syytä 2-tason tarkenteissa. POHA-tapahtuman selitteeseen kirjataan, mikä muu syy oli.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 295,
+    "thirdCategoryCode": "S101",
+    "thirdCategoryName": "Laukaisu",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 296,
+    "thirdCategoryCode": "S102",
+    "thirdCategoryName": "Tehon rajoitus",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 297,
+    "thirdCategoryCode": "S103",
+    "thirdCategoryName": "Yleisen sähköverkon vika tai rajoitus",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 298,
+    "thirdCategoryCode": "S104",
+    "thirdCategoryName": "Muu vika mm. virhetoiminto",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 299,
+    "thirdCategoryCode": "S201",
+    "thirdCategoryName": "Sähköratarakenne",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 300,
+    "thirdCategoryCode": "S202",
+    "thirdCategoryName": "Syöttöasema",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 301,
+    "thirdCategoryCode": "S203",
+    "thirdCategoryName": "Erotusjakso",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 302,
+    "thirdCategoryCode": "S204",
+    "thirdCategoryName": "Puu tms. sähköratarakenteissa",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 303,
+    "thirdCategoryCode": "S205",
+    "thirdCategoryName": "Nostettava ajolanka",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 304,
+    "thirdCategoryCode": "S206",
+    "thirdCategoryName": "Muu sähköratavika",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 305,
+    "thirdCategoryCode": "T101",
+    "thirdCategoryName": "Roudasta johtuvat nopeusrajoitukset",
+    "description": "Jos myöhästyminen aiheutuu roudasta johtuvasta nopeusrajoituksesta.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 306,
+    "thirdCategoryCode": "T102",
+    "thirdCategoryName": "Muut suunnitellut nopeusrajoitukset",
+    "description": "Jos myöhästyminen aiheutuu muusta suunnitellusta nopeusrajoituksesta kuin routarajoituksesta.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Radalla oleva este",
+      "en": "Obstruction on the line",
+      "sv": "Hinder på linjen"
+    },
+    "id": 307,
+    "thirdCategoryCode": "T301",
+    "thirdCategoryName": "Kiskoviat",
+    "description": "Havaituista kiskovioista ja muista ratarikoista informoidaan käyttökeskusta, joka luo tapauksesta POHA-tapahtuman ja samalla tarkentaa syyn 2-tasolle.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Radalla oleva este",
+      "en": "Obstruction on the line",
+      "sv": "Hinder på linjen"
+    },
+    "id": 308,
+    "thirdCategoryCode": "T302",
+    "thirdCategoryName": "Vika ratarakenteessa",
+    "description": "Havaituista kiskovioista ja muista ratarikoista informoidaan käyttökeskusta, joka luo tapauksesta POHA-tapahtuman ja samalla tarkentaa syyn 2-tasolle.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Radalla oleva este",
+      "en": "Obstruction on the line",
+      "sv": "Hinder på linjen"
+    },
+    "id": 309,
+    "thirdCategoryCode": "T303",
+    "thirdCategoryName": "Muu este (puu, lumieste tms. radalla)",
+    "description": "Muiden luonnonilmiöistä johtuvien esteiden osalta alueohjaaja luo POHA-tapahtuman, jos esteen poistaminen ei vaadi ilmoitusta kunnossapitäjälle. Jos ilmoitus kunnossapidolle vaaditaan, niin POHA-tapahtuman luo käyttökeskus. Muita esteitä ovat esimerkiksi kaatuneet puut ja lumiesteet.",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 222,
+    "thirdCategoryCode": "V101",
+    "thirdCategoryName": "Vetureita sitoutunut liikaa kunnossapitoon",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 223,
+    "thirdCategoryCode": "V102",
+    "thirdCategoryName": "Muu veturipula",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 53,
+    "thirdCategoryCode": "V201",
+    "thirdCategoryName": "JKV-vika (veturissa)",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 54,
+    "thirdCategoryCode": "V202",
+    "thirdCategoryName": "Turvalaitevika (veturissa)",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 55,
+    "thirdCategoryCode": "V203",
+    "thirdCategoryName": "Vetolaitteen katkeaminen",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 56,
+    "thirdCategoryCode": "V204",
+    "thirdCategoryName": "Jarruvika (vet.)",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 224,
+    "thirdCategoryCode": "V205",
+    "thirdCategoryName": "Vika veturin kiinteässä viestintälaitteessa",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 58,
+    "thirdCategoryCode": "V206",
+    "thirdCategoryName": "Laakerivika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 59,
+    "thirdCategoryCode": "V207",
+    "thirdCategoryName": "Lovipyörä",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 60,
+    "thirdCategoryCode": "V208",
+    "thirdCategoryName": "Virroitinvika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 225,
+    "thirdCategoryCode": "V209",
+    "thirdCategoryName": "Muu veturivika",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Veturin vaihto",
+      "en": "A locomotive replacement",
+      "sv": "Ett lokomotiversättare"
+    },
+    "id": 62,
+    "thirdCategoryCode": "V301",
+    "thirdCategoryName": "Sähköveturin vaihto toiseen sähköveturiin",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Veturin vaihto",
+      "en": "A locomotive replacement",
+      "sv": "Ett lokomotiversättare"
+    },
+    "id": 63,
+    "thirdCategoryCode": "V302",
+    "thirdCategoryName": "Sähköveturin vaihto dieselveturiin",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 64,
+    "thirdCategoryCode": "V303",
+    "thirdCategoryName": "Sm/Dm -> veturivetoinen juna",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 65,
+    "thirdCategoryCode": "V304",
+    "thirdCategoryName": "Veturivetoinen juna -> Sm/Dm",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 66,
+    "thirdCategoryCode": "V305",
+    "thirdCategoryName": "Veturivika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 67,
+    "thirdCategoryCode": "V306",
+    "thirdCategoryName": "Muu syy nopeuden alennukseen",
+    "validFrom": "2017-01-01"
+  }
+]

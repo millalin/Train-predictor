@@ -1,0 +1,512 @@
+[
+  {
+    "id": 146,
+    "detailedCategoryCode": "A1",
+    "detailedCategoryName": "Mäkeenjäänti tai nopeuden poikkeuksellinen aleneminen mäessä",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 147,
+    "detailedCategoryCode": "A2",
+    "detailedCategoryName": "Aikataulusuunnittelun virhe",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 97,
+    "detailedCategoryCode": "A3",
+    "detailedCategoryName": "Junaa ei ole ajettu",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 98,
+    "detailedCategoryCode": "E1",
+    "detailedCategoryName": "Etuajassa lähtö",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 148,
+    "detailedCategoryCode": "E2",
+    "detailedCategoryName": "Ajo- tai pysähtymisajan alitus",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 141,
+    "detailedCategoryCode": "H1",
+    "detailedCategoryName": "Liikennöitsijän henkilökunta puuttuu",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 82,
+    "detailedCategoryCode": "H2",
+    "detailedCategoryName": "Lähtövalmius- tai lähtöpoikkeamailmoitus tekemättä",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 142,
+    "detailedCategoryCode": "H3",
+    "detailedCategoryName": "Muu henkilökuntasyy",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sääolosuhteet",
+      "en": "The weather conditions",
+      "sv": "Väderförhållandena"
+    },
+    "id": 125,
+    "detailedCategoryCode": "I1",
+    "detailedCategoryName": "Poikkeukselliset sääolosuhteet",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Pudonneet lehdet",
+      "en": "Fallen leaves",
+      "sv": "Fallna löv"
+    },
+    "id": 126,
+    "detailedCategoryCode": "I2",
+    "detailedCategoryName": "Lehtikeli tai muu liukkaus",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ilkivalta",
+      "en": "Vandalism",
+      "sv": "Skadegörelse"
+    },
+    "id": 165,
+    "detailedCategoryCode": "I3",
+    "detailedCategoryName": "Ilkivalta, asiaton radalla liikkuminen",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 166,
+    "detailedCategoryCode": "I4",
+    "detailedCategoryName": "Muu syy",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 143,
+    "detailedCategoryCode": "J1",
+    "detailedCategoryName": "Junan muodostamisen viivästyminen (kaikki liikenne)",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 144,
+    "detailedCategoryCode": "K1",
+    "detailedCategoryName": "Kalustopula",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 86,
+    "detailedCategoryCode": "K2",
+    "detailedCategoryName": "Kalustovika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 87,
+    "detailedCategoryCode": "K3",
+    "detailedCategoryName": "Kalustosta johtuva nopeuden alennus",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 88,
+    "detailedCategoryCode": "K4",
+    "detailedCategoryName": "Kytkentä",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 89,
+    "detailedCategoryCode": "K5",
+    "detailedCategoryName": "Irroitus",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 90,
+    "detailedCategoryCode": "K6",
+    "detailedCategoryName": "Katsastamaton kalusto",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Yhteysliikenteen odotus",
+      "en": "The train waiting for connecting services",
+      "sv": "Väntan på anslutande trafik"
+    },
+    "id": 100,
+    "detailedCategoryCode": "L1",
+    "detailedCategoryName": "Yhteysliikenteen odotus (jatkoyhteydet)",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ruuhkautunut rataosa",
+      "en": "A congested line section",
+      "sv": "Ett överbelastat linjesnitt"
+    },
+    "id": 101,
+    "detailedCategoryCode": "L2",
+    "detailedCategoryName": "Junakohtaus, edellä kulkeva juna tai ohitus",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ruuhkautunut rataosa",
+      "en": "A congested line section",
+      "sv": "Ett överbelastat linjesnitt"
+    },
+    "id": 102,
+    "detailedCategoryCode": "L3",
+    "detailedCategoryName": "Konflikti kapasiteetissa",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Muu junaliikenne",
+      "en": "Other train services",
+      "sv": "Annan tågtrafik"
+    },
+    "id": 103,
+    "detailedCategoryCode": "L4",
+    "detailedCategoryName": "Myöhästyminen ulkomailta",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Radalle rikkoutunut kalusto",
+      "en": "A broken train on the line",
+      "sv": "Ett trasigt tåg på linjen"
+    },
+    "id": 104,
+    "detailedCategoryCode": "L5",
+    "detailedCategoryName": "Edessä oleva kalusto tukkii radan",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 149,
+    "detailedCategoryCode": "L6",
+    "detailedCategoryName": "Junan lähtöön liittyvä odotus",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Muu junaliikenne",
+      "en": "Other train services",
+      "sv": "Annan tågtrafik"
+    },
+    "id": 106,
+    "detailedCategoryCode": "L7",
+    "detailedCategoryName": "Liikenteenhoitovirhe",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "id": 150,
+    "detailedCategoryCode": "L8",
+    "detailedCategoryName": "Liikenteelliset päätökset",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Pitkittynyt pysähdys",
+      "en": "A prolonged stop",
+      "sv": "Ett förlängt stopp"
+    },
+    "id": 164,
+    "detailedCategoryCode": "M1",
+    "detailedCategoryName": "Matkustajajunan pysähtymisajan ylitys",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ylimääräinen pysähdys",
+      "en": "An extra stop",
+      "sv": "Ett extra stopp"
+    },
+    "id": 124,
+    "detailedCategoryCode": "M2",
+    "detailedCategoryName": "Ylimääräinen pysähdys",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Henkilövahinko",
+      "en": "A personal injury",
+      "sv": "En personskada"
+    },
+    "id": 119,
+    "detailedCategoryCode": "O1",
+    "detailedCategoryName": "Allejäänti (ihminen)",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Eläimen allejäänti",
+      "en": "An animal collision",
+      "sv": "En djurolycka"
+    },
+    "id": 120,
+    "detailedCategoryCode": "O2",
+    "detailedCategoryName": "Allejäänti (eläin)",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tasoristeysonnettomuus",
+      "en": "A level crossing accident",
+      "sv": "En plankorsningsolycka"
+    },
+    "id": 121,
+    "detailedCategoryCode": "O3",
+    "detailedCategoryName": "Tasoristeysonnettomuus",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Onnettomuus",
+      "en": "An accident",
+      "sv": "En olycka"
+    },
+    "id": 122,
+    "detailedCategoryCode": "O4",
+    "detailedCategoryName": "Muut onnettomuudet ja vauriot",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratajärjestelmävika",
+      "en": "A fault in the railway system",
+      "sv": "Fel i järnvägssystemet"
+    },
+    "id": 151,
+    "detailedCategoryCode": "P1",
+    "detailedCategoryName": "Ratainfran laiteviat",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Tietojärjestelmävika",
+      "en": "A fault in the data system",
+      "sv": "Fel i datasystemet"
+    },
+    "id": 152,
+    "detailedCategoryCode": "P2",
+    "detailedCategoryName": "Tietojärjestelmäviat",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 153,
+    "detailedCategoryCode": "P3",
+    "detailedCategoryName": "Liikkuvan kaluston valvontalaitevika tai -häiriö",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "id": 154,
+    "detailedCategoryCode": "P4",
+    "detailedCategoryName": "Viestintälaite /-yhteysviat",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 160,
+    "detailedCategoryCode": "R1",
+    "detailedCategoryName": "Ratatyöt (ennakoidut työt nopeusrajoituksineen)",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 161,
+    "detailedCategoryCode": "R2",
+    "detailedCategoryName": "Ratatyön sovitun ajan ylitys",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 162,
+    "detailedCategoryCode": "R3",
+    "detailedCategoryName": "Liikennerajoite ratatyön jälkeen",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Ratatyöt",
+      "en": "Track work",
+      "sv": "Banarbeten"
+    },
+    "id": 163,
+    "detailedCategoryCode": "R4",
+    "detailedCategoryName": "Ratatyön toteutus poikkeaa suunnitellusta",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 155,
+    "detailedCategoryCode": "S1",
+    "detailedCategoryName": "Sähkönjakeluhäiriö",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Sähkövika",
+      "en": "An electrical fault",
+      "sv": "Ett elektriskt fel"
+    },
+    "id": 156,
+    "detailedCategoryCode": "S2",
+    "detailedCategoryName": "Sähköratavika",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 157,
+    "detailedCategoryCode": "T1",
+    "detailedCategoryName": "Pitkäaikaiset nopeusrajoitukset",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 158,
+    "detailedCategoryCode": "T2",
+    "detailedCategoryName": "Liikenteenohjauksen asettamat nopeusrajoitukset (ratarakenne)",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Radalla oleva este",
+      "en": "Obstruction on the line",
+      "sv": "Hinder på linjen"
+    },
+    "id": 159,
+    "detailedCategoryCode": "T3",
+    "detailedCategoryName": "Ratarikko / este radalla",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 145,
+    "detailedCategoryCode": "V1",
+    "detailedCategoryName": "Veturipula",
+    "validFrom": "2019-09-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Junan tekninen vika",
+      "en": "A technical fault in the train",
+      "sv": "Ett tekniskt fel i tåget"
+    },
+    "id": 92,
+    "detailedCategoryCode": "V2",
+    "detailedCategoryName": "Veturivika",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Alennettu nopeusrajoitus",
+      "en": "A lowered speed limit ",
+      "sv": "Sänkt hastighetsbegränsning"
+    },
+    "id": 93,
+    "detailedCategoryCode": "V3",
+    "detailedCategoryName": "Vetovoimasta johtuva nopeuden alennus / tehon puute",
+    "validFrom": "2017-01-01"
+  },
+  {
+    "passengerTerm": {
+      "fi": "Viivästyneet lähtövalmistelut",
+      "en": "Delayed departure preparations",
+      "sv": "Försenade avgångsförberedelser"
+    },
+    "id": 94,
+    "detailedCategoryCode": "V4",
+    "detailedCategoryName": "Katsastamaton vetokalusto",
+    "validFrom": "2017-01-01"
+  }
+]

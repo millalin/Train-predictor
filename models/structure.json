@@ -1,0 +1,24 @@
+{
+  "trainCategory": "Long-distance",
+  "commuterLineID": "",
+  "timeTableRows": [
+    {
+      "stationShortCode": "HKI",
+      "type": "DEPARTURE",
+      "trainStopping": true,
+      "commercialTrack": "9",
+      "cancelled": false,
+      "scheduledTime": "2017-01-07T05:23:00.000Z",
+      "actualTime": "2017-01-07T05:33:04.000Z",
+      "differenceInMinutes": 10,
+      "causes": [
+        {
+          "categoryCode": "I",
+          "detailedCategoryCode": "I1",
+          "categoryCodeId": 34,
+          "detailedCategoryCodeId": 125
+        }
+      ]
+    }
+  ]
+}
