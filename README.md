@@ -1,0 +1,2 @@
+# Train-predictor
+In a busy world like ours, it is important for people to be able to plan their timetables accurately. In Finland the trains are often late, making planning hard. Having a model that predicts if a train is late would help in this. The predictions could be checked for a certain time and a station. The results would also help HSL to recognize if there are some patterns that cause trains to be late.
