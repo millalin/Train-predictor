@@ -8,7 +8,7 @@ data_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data")
 json_files = glob.glob(os.path.join(data_folder, "raw", "*.json"))
 extra_columns = ["actualTime", "cancelled", "commercialTrack", "differenceInMinutes", 
 				 "scheduledTime", "stationShortCode", "trainStopping", "categoryCodeId", "categoryCode", 
-				 "detailedCategoryCode", "detailedCategoryCodeId", "month", "day", "hour"]
+				 "detailedCategoryCode", "detailedCategoryCodeId", "year", "month", "day", "hour"]
 
 dfs = []
 for json_file in json_files:
@@ -26,6 +26,7 @@ for json_file in json_files:
 			row["month"] = date.month
 			row["day"] = date.day
 			row["hour"] = date.hour
+			row["year"] = date.year
 
 			if len(k["causes"]) > 0:
 				[k["causes"][0].pop(key, None) for key in ["thirdCategoryId", "thirdCategoryCodeId"]]
