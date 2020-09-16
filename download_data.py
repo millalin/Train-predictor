@@ -8,7 +8,7 @@ import requests
 dir_path = os.path.dirname(os.path.realpath(__file__))
 base_url = "https://rata.digitraffic.fi/api/v1/trains/dumps/digitraffic-rata-trains-{}.zip"
 
-destination_folder = os.path.join(dir_path, "data")
+destination_folder = os.path.join(dir_path, "data", "raw")
 end_date = datetime.date(2020, 9, 1)
 
 for year in range(2017, 2021):
