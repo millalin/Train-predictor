@@ -10,11 +10,6 @@ extra_columns = ["actualTime", "cancelled", "commercialTrack", "differenceInMinu
 				 "scheduledTime", "stationShortCode", "trainStopping", "categoryCodeId", "categoryCode", 
 				 "detailedCategoryCode", "detailedCategoryCodeId", "month", "day", "hour"]
 
-def save_to_csv(filename, df):
-	filename = os.path.basename(filename).split(".")[0]
-	destination = os.path.join(data_folder, "clean", f"{filename}.csv")
-	df.to_csv(destination, index=False)
-
 dfs = []
 for json_file in json_files:
 	df = pd.read_json(json_file)
