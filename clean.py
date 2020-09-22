@@ -2,49 +2,60 @@ import os
 import glob
 import pandas as pd
 import datetime
+import json
 
 # Location of data directory
 data_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data")
 json_files = glob.glob(os.path.join(data_folder, "raw", "*.json"))
-extra_columns = ["actualTime", "cancelled", "commercialTrack", "differenceInMinutes",
-				 "scheduledTime", "stationShortCode", "trainStopping", "categoryCodeId", "categoryCode",
-				 "detailedCategoryCode", "detailedCategoryCodeId", "year", "month", "day", "hour", "direction"]
+
+commuter_line_ids = ["Y","U","L","E","A","P","I","K","R","T","D","Z"]
+
+used_columns = ["commuterLineID", "stationShortCode", "commercialTrack", "differenceInMinutes", 
+ 				"weather_area", "year", "month", "day", "hour", "categoryCode", "categoryCodeId",
+ 				"detailedCategoryCode", "detailedCategoryCodeId"]
+
+
+with open("weather_stations.json") as f:
+	weather_stations = json.load(f)
+
+
+def get_cause_category(key, causes):
+	return None if len(causes) == 0 or key not in causes[0] else causes[0][key]
+
 
 dfs = []
 for json_file in json_files:
 	df = pd.read_json(json_file)
-	df = df[(df["commuterLineID"] != "") & (df["trainCategory"].str.contains("Commuter"))]
-	df = df[["trainCategory", "commuterLineID", "timeTableRows"]]
-	df = pd.concat([df, pd.DataFrame(index=df.index, columns=extra_columns)], axis=1)
+	df = df[df['trainCategory'] == "Commuter"]
+	df = df.explode("timeTableRows")
+	df = df[df['commuterLineID'].isin(commuter_line_ids)]
+	sub_df = pd.json_normalize(df["timeTableRows"])
+	sub_df = sub_df[sub_df['type'] == "DEPARTURE"]
 
-# Set row values from timeTableRows to created extra columns
-	for i, row in df.iterrows():
-		direction = 0 if row['timeTableRows'][-1]["stationShortCode"] == "HKI" else 1
-		for k in row["timeTableRows"]:
-			[k.pop(key, None) for key in["stationUICCode", "countryCode", "type", "commercialStop", "liveEstimateTime", "estimateSource", "unknownDelay", "trainReady"]]
+	df = df.reset_index()
+	sub_df = sub_df.reset_index()
 
-			date = datetime.datetime.strptime(k["scheduledTime"], "%Y-%m-%dT%H:%M:%S.%fZ")
-			row["month"] = date.month
-			row["day"] = date.day
-			row["hour"] = date.hour
-			row["year"] = date.year
-			row["direction"] = direction
+	df = pd.concat([df, sub_df], axis=1)
+	df = df[df["stationShortCode"].notna()]
+	df = df[(df["commercialTrack"].notna())]
+	df = df[df["commercialStop"] == True]
+	df = df[df["trainStopping"] == True]
 
-			if k["causes"]:
-				[k["causes"][0].pop(key, None) for key in ["thirdCategoryId", "thirdCategoryCodeId"]]
-				for key in k["causes"][0]:
-					row[key] = k["causes"][0][key]
-			k.pop("causes", None)
-			for key in k:
-				row[key] = k[key]
-	df = df.drop(["actualTime", "scheduledTime", "timeTableRows"], axis=1)
+	df['weather_area'] = df['stationShortCode'].apply(lambda x: 0 if x not in weather_stations else weather_stations[x])
+	df["year"] = df["scheduledTime"].apply(lambda x: datetime.datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ").year)
+	df["month"] = df["scheduledTime"].apply(lambda x: datetime.datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ").month)
+	df["day"] = df["scheduledTime"].apply(lambda x: datetime.datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ").day)
+	df["hour"] = df["scheduledTime"].apply(lambda x: datetime.datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ").hour)
+
+	df["categoryCode"] = df["causes"].apply(lambda x: get_cause_category("categoryCode", x))
+	df["categoryCodeId"] = df["causes"].apply(lambda x: get_cause_category("categoryCodeId", x))
+	df["detailedCategoryCode"] = df["causes"].apply(lambda x: get_cause_category("detailedCategoryCode", x))
+	df["detailedCategoryCodeId"] = df["causes"].apply(lambda x: get_cause_category("detailedCategoryCodeId", x))
+
+	df = df[used_columns]
+	df = df[df["differenceInMinutes"].notna()]
 	dfs.append(df)
 
 df = pd.concat(dfs)
-
-# clean up NaNs from certain columns, also remove N and V trains and rows with empty commercialTrack
-filtered_cols = ["cancelled", "commercialTrack", "commuterLineID"]
-df = df[(df[filtered_cols].notnull().all(1)) & (df["commuterLineID"] != "N") & (df["commuterLineID"] != "V") &  (df["commercialTrack"] != "")]
-
 destination=os.path.join(data_folder, "clean", "trains.csv")
 df.to_csv(destination, index = False)
