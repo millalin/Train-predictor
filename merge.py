@@ -1,7 +1,7 @@
 import glob
 import pandas as pd
 
-trains_data = pd.read_csv("trains.csv", dtype={"commercialTrack": str}) 
+trains_data = pd.read_csv("clean/trains.csv", dtype={"commercialTrack": str}) 
 
 path =r'data_weather'
 
