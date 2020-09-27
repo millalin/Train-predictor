@@ -12,7 +12,7 @@ commuter_line_ids = ["Y","U","L","E","A","P","I","K","R","T","D","Z"]
 
 used_columns = ["commuterLineID", "stationShortCode", "commercialTrack", "differenceInMinutes", 
  				"weather_area", "year", "month", "day", "hour", "categoryCode", "categoryCodeId",
- 				"detailedCategoryCode", "detailedCategoryCodeId"]
+ 				"detailedCategoryCode", "detailedCategoryCodeId", "direction"]
 
 
 with open("weather_stations.json") as f:
@@ -27,10 +27,10 @@ dfs = []
 for json_file in json_files:
 	df = pd.read_json(json_file)
 	df = df[df['trainCategory'] == "Commuter"]
+	df['direction'] = df['timeTableRows'].apply(lambda x: 1 if x[0]["stationShortCode"] == "HKI" else 0)
 	df = df.explode("timeTableRows")
 	df = df[df['commuterLineID'].isin(commuter_line_ids)]
 	sub_df = pd.json_normalize(df["timeTableRows"])
-	sub_df = sub_df[sub_df['type'] == "DEPARTURE"]
 
 	df = df.reset_index()
 	sub_df = sub_df.reset_index()
@@ -40,6 +40,7 @@ for json_file in json_files:
 	df = df[(df["commercialTrack"].notna())]
 	df = df[df["commercialStop"] == True]
 	df = df[df["trainStopping"] == True]
+	df = df[df["type"] == "DEPARTURE"]
 
 	df['weather_area'] = df['stationShortCode'].apply(lambda x: 0 if x not in weather_stations else weather_stations[x])
 	df["year"] = df["scheduledTime"].apply(lambda x: datetime.datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ").year)
