@@ -14,12 +14,11 @@ start_time = start_time.isoformat(timespec="seconds") + "Z"
 # -> 2020-07-07T12:00:00Z
 end_time = end_time.isoformat(timespec="seconds") + "Z"
 # -> 2020-07-07T13:00:00Z
-# 'Helsinki-Vantaa airport': {'fmisid': 16000063, 'latitude': 60.3267, 'longitude': 24.95675} # cuurently not used in the query
 
 places = ['Kumpula,Helsinki', 'Tapiola,Espoo',
           'Kirkkonummi', 'Lahti', 'Tampere']
 place_index = ['Helsinki', 'Espoo', 'Kirkkonummi', 'Lahti', 'Tampere']
-# Hämeenlinna and Hyvinkää queries not implemented
+# Hämeenlinna and Hyvinkää queries not implemented, the places used in merge are:
 # places = ['Kumpula,Helsinki', 'Espoo', 'Kirkkonummi', 'Lahti', 'Hämeenlinna, 'Tampere', 'Hyvinkää', 'Lahti']
 rows = []
 for place in places:

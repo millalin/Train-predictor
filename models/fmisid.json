@@ -1,0 +1,29 @@
+[
+  {
+    "Helsinki-Vantaa airport": {
+      "fmisid": 16000063,
+      "latitude": 60.3267,
+      "longitude": 24.95675
+    },
+    "Espoo Tapiola": {
+      "fmisid": 874863,
+      "latitude": 60.17797,
+      "longitude": 24.78743
+    },
+    "Espoo Nuuksio": {
+      "fmisid": 852678,
+      "latitude": 60.29128,
+      "longitude": 24.56782
+    },
+    "Lahti Sopenkorpi": {
+      "fmisid": 104796,
+      "latitude": 60.97465,
+      "longitude": 25.6202
+    },
+    "Tampere Tampella": {
+      "fmisid": 16011878,
+      "latitude": 61.50124,
+      "longitude": 23.76478
+    }
+  }
+]
