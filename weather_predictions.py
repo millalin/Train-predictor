@@ -8,7 +8,7 @@ import pandas as pd
 # Retriew forecast for seven locations, max prediction + 54 h, save to csv-file
 
 now = datetime.datetime.utcnow()
-end_time = now + datetime.timedelta(hours=48)
+end_time = now + datetime.timedelta(hours=36)
 start_time = end_time - datetime.timedelta(hours=1)
 # Convert times to properly formatted strings
 start_time = start_time.isoformat(timespec="seconds") + "Z"
@@ -17,9 +17,9 @@ end_time = end_time.isoformat(timespec="seconds") + "Z"
 # -> 2020-07-07T13:00:00Z
 
 
-place_index = ['Helsinki', 'Espoo', 'Kirkkonummi', 'Lahti', 'Hämeenlinna', 'Tampere', 'Hyvinkää']
+place_index = ['Helsinki', 'Espoo', 'Kirkkonummi', 'Lahti', 'Hämeenlinna', 'Tampere', 'Hyvinkää', 'Kouvola']
 places = ["latlon=60.3267,24.95675", "latlon=60.17797,24.78743", "latlon=60.29128,24.56782",
-          "latlon=60.97465,25.6202", "latlon=61,24.49", "latlon=61.50124,23.76478", "latlon=60.6,24.8"]
+          "latlon=60.97465,25.6202", "latlon=61,24.49", "latlon=61.50124,23.76478", "latlon=60.6,24.8", "latlon=60.7,26.81"]
 
 rows = []
 
