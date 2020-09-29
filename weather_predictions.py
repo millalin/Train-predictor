@@ -5,28 +5,32 @@ import datetime
 import json
 import pandas as pd
 
-# Retrieve the latest observations for several locations, save to csv-file
+# Retriew forecast for seven locations, max prediction + 54 h, save to csv-file
 
-end_time = datetime.datetime.utcnow()
-start_time = end_time - datetime.timedelta(hours=5)
+now = datetime.datetime.utcnow()
+end_time = now + datetime.timedelta(hours=48)
+start_time = end_time - datetime.timedelta(hours=1)
 # Convert times to properly formatted strings
 start_time = start_time.isoformat(timespec="seconds") + "Z"
 # -> 2020-07-07T12:00:00Z
 end_time = end_time.isoformat(timespec="seconds") + "Z"
 # -> 2020-07-07T13:00:00Z
 
-places = ['Kumpula,Helsinki', 'Tapiola,Espoo',
-          'Kirkkonummi', 'Lahti', 'Tampere']
-place_index = ['Helsinki', 'Espoo', 'Kirkkonummi', 'Lahti', 'Tampere']
-# Hämeenlinna and Hyvinkää queries not implemented, the places used in merge are:
-# places = ['Kumpula,Helsinki', 'Espoo', 'Kirkkonummi', 'Lahti', 'Hämeenlinna, 'Tampere', 'Hyvinkää', 'Lahti']
+
+place_index = ['Helsinki', 'Espoo', 'Kirkkonummi', 'Lahti', 'Hämeenlinna', 'Tampere', 'Hyvinkää']
+places = ["latlon=60.3267,24.95675", "latlon=60.17797,24.78743", "latlon=60.29128,24.56782",
+          "latlon=60.97465,25.6202", "latlon=61,24.49", "latlon=61.50124,23.76478", "latlon=60.6,24.8"]
+
 rows = []
+
 for place in places:
-    obs = download_stored_query("fmi::observations::weather::multipointcoverage",
-                                args=["place=" + place,
-                                      "starttime=" + start_time, "endtime=" + end_time])
-    # print(obs.location_metadata)
-    # print(obs.data)
+
+    obs = download_stored_query("fmi::forecast::hirlam::surface::point::multipointcoverage",
+                                args=["starttime=" + start_time,
+                                      "endtime=" + end_time, place])
+
+    print(obs.location_metadata)
+    print(obs.data)
     time_of_day = max(obs.data.keys())
     print('timestamp', time_of_day)
 
@@ -34,18 +38,19 @@ for place in places:
     print(weather_station)
 
     data = obs.data[time_of_day][weather_station]
-    rain = data['Precipitation intensity']['value']
-    snowDepth = data['Snow depth']['value']
+    rain = data['Precipitation amount 1 hour']['value']
     celcius = data['Air temperature']['value']
-    visibility = data['Horizontal visibility']['value']
-    windGustSpeed = data['Gust speed']['value']
+    windGustSpeed = data['Wind gust']['value']
     windSpeed = data['Wind speed']['value']
 
     row = [time_of_day.year, time_of_day.month, time_of_day.day, time_of_day.hour,
-           'UTC', rain, snowDepth, celcius, visibility, windGustSpeed, windSpeed]
+           'UTC', rain,  celcius, windGustSpeed, windSpeed]
     rows.append(row)
 
 df = pd.DataFrame(rows, columns=['year', 'month',  'day',  'hour', 'timezone',
-                                 'rain', 'snowDepth', 'celcius', 'visibility', 'windGustSpeed', 'windSpeed'], index=place_index)
+                                 'rain', 'celcius', 'windGustSpeed', 'windSpeed'], index=place_index)
+
+print('time now', now)
+print('prediction time range:', start_time, end_time)
 print(df)
 df.to_csv(r'data-we-pred/latest_weather_observations.csv', index=True)

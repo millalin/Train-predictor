@@ -1,6 +1,8 @@
-,year,month,day,hour,timezone,rain,snowDepth,celcius,visibility,windGustSpeed,windSpeed
-Helsinki,2020,9,27,13,UTC,0.0,-1.0,19.2,39680.0,9.1,4.5
-Espoo,2020,9,27,13,UTC,0.0,-1.0,18.1,29546.0,7.8,4.4
-Kirkkonummi,2020,9,27,13,UTC,0.0,-1.0,19.8,39452.0,6.4,3.3
-Lahti,2020,9,27,13,UTC,0.0,-1.0,20.7,32777.0,,
-Tampere,2020,9,27,13,UTC,,,21.9,,,
+,year,month,day,hour,timezone,rain,celcius,windGustSpeed,windSpeed
+Helsinki,2020,10,1,10,UTC,0.0,15.88,7.57,2.48
+Espoo,2020,10,1,10,UTC,0.0,14.88,8.78,4.79
+Kirkkonummi,2020,10,1,10,UTC,0.0,14.93,7.56,2.69
+Lahti,2020,10,1,10,UTC,0.0,15.61,7.18,2.18
+Hämeenlinna,2020,10,1,10,UTC,0.0,14.15,5.32,1.66
+Tampere,2020,10,1,10,UTC,0.0,13.12,6.87,3.22
+Hyvinkää,2020,10,1,10,UTC,0.0,15.27,6.78,1.86
