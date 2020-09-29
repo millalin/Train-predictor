@@ -1,7 +1,7 @@
 import glob
 import pandas as pd
 
-trains_data = pd.read_csv("data/clean/trains.csv", dtype={"commercialTrack": str})
+trains_data = pd.read_csv("data/clean/trains.csv", dtype={"commercialTrack": str}) 
 
 path =r'data_weather'
 
@@ -17,7 +17,7 @@ def get_df(fn, area):
 
 data_helsinkivantaa = get_df("/hki-vantaa/*.csv", 1)
 data_espoo = get_df("/espoo/*.csv", 2)
-data_kirkkonummi = get_df("/espoo/*csv", 3)
+data_kirkkonummi = get_df("/kirkkonummi/*csv", 3)
 data_lahti = get_df("/lahti/*csv", 4)
 data_hameenlinna = get_df("/hameenlinna/*csv", 5)
 data_tampere = get_df("/tampere/*csv", 6)
