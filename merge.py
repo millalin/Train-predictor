@@ -1,7 +1,7 @@
 import glob
 import pandas as pd
 
-trains_data = pd.read_csv("data/clean/trains.csv", dtype={"commercialTrack": str})
+trains_data = pd.read_csv("data/clean/trains.csv", dtype={"commercialTrack": str}) 
 
 path =r'data_weather'
 
@@ -22,13 +22,14 @@ data_lahti = get_df("/lahti/*csv", 4)
 data_hameenlinna = get_df("/hameenlinna/*csv", 5)
 data_tampere = get_df("/tampere/*csv", 6)
 data_hyvinkaa = get_df("/hyvinkaa/*csv", 7)
-data_lahti = get_df("/lahti/*csv", 8)
+data_kouvola = get_df("/kouvola/*csv", 8)
 
-frames = [data_helsinkivantaa, data_espoo, data_kirkkonummi, data_lahti, data_hameenlinna, data_tampere, data_hyvinkaa, data_lahti]
+frames = [data_helsinkivantaa, data_espoo, data_kirkkonummi, data_lahti, data_hameenlinna, data_tampere, data_hyvinkaa, data_kouvola]
 weather_data = pd.concat(frames)
 
+del weather_data['Aikavyöhyke']
 weather_data = weather_data.rename(columns = {'Vuosi': 'year', 'Kk': 'month', 'Pv': 'day', 'Klo': 'hour',
-'Aikavyöhyke':'timezone', 'Sateen intensiteetti (mm/h)':'rain', 'Lumensyvyys (cm)':'snowDepth', 'Ilman lämpötila (degC)':'celcius',
+ 'Sateen intensiteetti (mm/h)':'rain', 'Lumensyvyys (cm)':'snowDepth', 'Ilman lämpötila (degC)':'celcius',
  'Näkyvyys (m)':'visibility', 'Puuskanopeus (m/s)':'windGustSpeed', 'Tuulen nopeus (m/s)':'windSpeed'}, inplace = False)
 
 weather_data["hour"] = weather_data["hour"].astype(str).str.replace(":00","").astype(int)
