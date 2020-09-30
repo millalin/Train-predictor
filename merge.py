@@ -74,12 +74,12 @@ weather_data = pd.concat(frames)
 
 del weather_data['Aikavyöhyke']
 weather_data = weather_data.rename(columns = {'Vuosi': 'year', 'Kk': 'month', 'Pv': 'day', 'Klo': 'hour',
-'Sateen intensiteetti (mm/h)':'rain', 'Lumensyvyys (cm)':'snowDepth', 'Ilman lämpötila (degC)':'celcius',
-'Näkyvyys (m)':'visibility', 'Puuskanopeus (m/s)':'windGustSpeed', 'Tuulen nopeus (m/s)':'windSpeed'}, inplace = False)
+'Sateen intensiteetti (mm/h)':'rain', 'Ilman lämpötila (degC)':'celcius',
+'Puuskanopeus (m/s)':'windGustSpeed', 'Tuulen nopeus (m/s)':'windSpeed'}, inplace = False)
 
 weather_data["hour"] = weather_data["hour"].astype(str).str.replace(":00","").astype(int)
-
 df = pd.merge(trains_data, weather_data, on= ['year', 'month', 'day', 'hour', 'weather_area'], how='left')
+df = df.dropna(axis=0, subset=['rain', 'celcius', 'windGustSpeed', 'windSpeed'])
 
 df.to_csv(r'trains_and_weather.csv', index = False)
 
