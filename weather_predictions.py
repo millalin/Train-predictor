@@ -17,7 +17,8 @@ end_time = end_time.isoformat(timespec="seconds") + "Z"
 # -> 2020-07-07T13:00:00Z
 
 
-place_index = ['Helsinki', 'Espoo', 'Kirkkonummi', 'Lahti', 'Hämeenlinna', 'Tampere', 'Hyvinkää', 'Kouvola']
+place_index = ['Helsinki', 'Espoo', 'Kirkkonummi', 'Lahti',
+               'Hämeenlinna', 'Tampere', 'Hyvinkää', 'Kouvola']
 places = ["latlon=60.3267,24.95675", "latlon=60.17797,24.78743", "latlon=60.29128,24.56782",
           "latlon=60.97465,25.6202", "latlon=61,24.49", "latlon=61.50124,23.76478", "latlon=60.6,24.8", "latlon=60.7,26.81"]
 
@@ -44,10 +45,10 @@ for place in places:
     windSpeed = data['Wind speed']['value']
 
     row = [time_of_day.year, time_of_day.month, time_of_day.day, time_of_day.hour,
-           'UTC', rain,  celcius, windGustSpeed, windSpeed]
+           rain,  celcius, windGustSpeed, windSpeed]
     rows.append(row)
 
-df = pd.DataFrame(rows, columns=['year', 'month',  'day',  'hour', 'timezone',
+df = pd.DataFrame(rows, columns=['year', 'month',  'day',  'hour',
                                  'rain', 'celcius', 'windGustSpeed', 'windSpeed'], index=place_index)
 
 print('time now', now)
