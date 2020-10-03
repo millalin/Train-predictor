@@ -1,3 +1,4 @@
+import os
 import glob
 import pandas as pd
 
@@ -81,5 +82,6 @@ weather_data["hour"] = weather_data["hour"].astype(str).str.replace(":00","").as
 df = pd.merge(trains_data, weather_data, on= ['year', 'month', 'day', 'hour', 'weather_area'], how='left')
 df = df.dropna(axis=0, subset=['rain', 'celcius', 'windGustSpeed', 'windSpeed'])
 
-df.to_csv(r'trains_and_weather.csv', index = False)
-
+data_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data")
+destination=os.path.join(data_folder, "merged", "trains_and_weather.csv")
+df.to_csv(destination, index = False)
