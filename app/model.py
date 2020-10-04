@@ -26,4 +26,4 @@ pickle.dump(rf3, open('modeltrain.pkl','wb'))
 
 # Testing after building model
 model = pickle.load(open('modeltrain.pkl','rb'))
-print(model.predict([[5, 6, 2, 22, 1]]))
+print(model.predict([[8, 6, 2, 22, 1]]))
