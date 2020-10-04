@@ -15,7 +15,7 @@ used_columns = ["commuterLineID", "stationShortCode", "commercialTrack", "differ
  				"detailedCategoryCode", "detailedCategoryCodeId", "direction"]
 
 
-with open("weather_stations.json") as f:
+with open("../utils/weather_stations.json") as f:
 	weather_stations = json.load(f)
 
 

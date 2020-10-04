@@ -54,4 +54,4 @@ df = pd.DataFrame(rows, columns=['year', 'month',  'day',  'hour',
 print('time now', now)
 print('prediction time range:', start_time, end_time)
 print(df)
-df.to_csv(r'data-we-pred/latest_weather_observations.csv', index=True)
+df.to_csv(r'../data_weather_predictions/latest_weather_observations.csv', index=True)
