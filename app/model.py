@@ -11,8 +11,8 @@ dataset = dataset.astype({'stationShortCode': 'category'})
 categoryToNumeric = dataset.select_dtypes(['category']).columns
 dataset[categoryToNumeric] = dataset[categoryToNumeric].apply(lambda x: x.cat.codes)
 
-# For now selecting differenceinMinutes, month, day, hour, direction
-X = dataset.iloc[0:100000,lambda df: [1,6,7,8,13]]
+# For now selecting differenceinMinutes, month, day, hour, direction, rain, celcius, windGustSpeed, windSpeed
+X = dataset.iloc[0:100000,lambda df: [1,6,7,8,13,14,15,16,17]]
 y = dataset.iloc[0:100000, 3]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y,
@@ -26,4 +26,4 @@ pickle.dump(rf3, open('modeltrain.pkl','wb'))
 
 # Testing after building model
 model = pickle.load(open('modeltrain.pkl','rb'))
-print(model.predict([[8, 6, 2, 22, 1]]))
+print(model.predict([[8, 6, 2, 22, 1, 0.0, 14.42, 3.77, 1.55]]))
