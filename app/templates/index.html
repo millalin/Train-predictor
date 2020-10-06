@@ -66,12 +66,13 @@
   <br>
 
     <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" name="commuterLineID" placeholder="train code" required="required" />
     	<input type="text" name="stationShortCode" placeholder="station" required="required" />
-        <input type="text" name="month" placeholder="month" required="required" />
-        <input type="text" name="day" placeholder="day" required="required" />
-        <input type="text" name="hour" placeholder="hour" required="required" />
-        <input type="text" name="direction" placeholder="direction" required="required" />
-        <button type="submit" class="button">Predict train delay</button>
+      <input type="text" name="month" placeholder="month (must be current in 2 days)" required="required" />
+      <input type="text" name="day" placeholder="day (must be within 48 hours)" required="required" />
+      <input type="text" name="hour" placeholder="hour (0-23 in in future of the day)" required="required" />
+      <input type="text" name="direction (0 or 1)" placeholder="direction" required="required" />
+       <button type="submit" class="button">Predict train delay</button>
     </form>
    <br>
    <p style="font-size:200%;"> {{ prediction_minutes }}</p>
