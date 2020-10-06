@@ -1,6 +1,7 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
+import helpers.weather_for_model as weather
 
 app = Flask(__name__)
 model = pickle.load(open('modeltrain.pkl', 'rb'))
@@ -14,8 +15,11 @@ def home():
 def predict():
 
     inputs = [int(x) for x in request.form.values()]
+    print(inputs)
+    weatherPrediction = weather.give_prediction(inputs[1], inputs[2], inputs[3])
+    print(weatherPrediction)  # 'rain', 'celcius', 'windGustSpeed', 'windSpeed'
+    inputs.extend(weatherPrediction)
     features = [np.array(inputs)]
-    # weather still missing
     prediction = model.predict(features)
 
     res = prediction[0]
