@@ -28,7 +28,14 @@ dataset = pd.read_csv('../trains_and_weather.csv', low_memory=False)
 
 update_stations_json(dataset)
 dataset["stationShortCode"] = dataset['stationShortCodeCategory']
-dataset['commuterLineID'] = dataset['commuterLineID'].astype("category").cat.codes
+train = dataset['commuterLineID'].drop_duplicates()
+commuterLineID = dataset['commuterLineID'].astype("category").cat.codes
+dataset['commuterLineID'] = commuterLineID
+lineID = commuterLineID.drop_duplicates()
+lines = dict(zip( lineID, train ))
+
+with open("../utils/lines.json", "w") as f:  
+    json.dump(lines, f) 
 
 
 # For now selecting commuterLineID, stationShortCode, month, day, hour, direction, rain, celcius, windGustSpeed, windSpeed
