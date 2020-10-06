@@ -20,22 +20,30 @@ stations = create_stations_json()
 
 @app.route('/')
 def home():
+    print(stations)
     return render_template('index.html', stations=stations)
+
 
 @app.route('/predict',methods=['POST'])
 def predict():
 
     inputs = [int(x) for x in request.form.values()]
+    select = request.form.get('station')
+    select = int(select)
+
     print(inputs)
     weatherPrediction = weather.give_prediction(inputs[2], inputs[3], inputs[4])
     print(weatherPrediction)  # 'rain', 'celcius', 'windGustSpeed', 'windSpeed'
     inputs.extend(weatherPrediction)
+    inputs = inputs[0:1] + [select] + inputs[2:]  
     features = [np.array(inputs)]
+    print("feat ", features)
     prediction = model.predict(features)
 
     res = int(prediction[0])
 
     return render_template('index.html', prediction_minutes='Delay {} minute(s)'.format(res), stations=stations)
+
 
 if __name__ == "__main__":
     app.run(debug=True)

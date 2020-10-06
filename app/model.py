@@ -24,7 +24,7 @@ def update_stations_json(df):
         json.dump(stations, f, ensure_ascii=False)
 
 
-dataset = pd.read_csv('../data/merged/trains_and_weather.csv', low_memory=False)
+dataset = pd.read_csv('../trains_and_weather.csv', low_memory=False)
 
 update_stations_json(dataset)
 dataset["stationShortCode"] = dataset['stationShortCodeCategory']
@@ -32,8 +32,8 @@ dataset['commuterLineID'] = dataset['commuterLineID'].astype("category").cat.cod
 
 
 # For now selecting commuterLineID, stationShortCode, month, day, hour, direction, rain, celcius, windGustSpeed, windSpeed
-X = dataset.iloc[0:100000,lambda df: [0,1,6,7,8,13,14,15,16,17]]
-y = dataset.iloc[0:100000, 3]
+X = dataset.iloc[0:1000000,lambda df: [0,1,6,7,8,13,14,15,16,17]]
+y = dataset.iloc[0:1000000, 3]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                     train_size=0.80, test_size=0.20, random_state=66)
