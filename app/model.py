@@ -28,7 +28,7 @@ dataset = pd.read_csv('../data/merged/trains_and_weather.csv', low_memory=False)
 
 update_stations_json(dataset)
 dataset["stationShortCode"] = dataset['stationShortCodeCategory']
-dataset['commuterLineID'] = df['commuterLineID'].astype("category").cat.codes
+dataset['commuterLineID'] = dataset['commuterLineID'].astype("category").cat.codes
 
 
 # For now selecting commuterLineID, stationShortCode, month, day, hour, direction, rain, celcius, windGustSpeed, windSpeed
