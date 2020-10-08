@@ -1,0 +1,58 @@
+{
+  "1": {
+    "area": "Veromiehenkylä",
+    "fmisid": 10019547,
+    "latitude": 60.3267,
+    "longitude": 24.95675,
+    "latlon": "latlon=60.3267,24.95675"
+  },
+  "2": {
+    "area": "Hakalehto",
+    "fmisid": 10019575,
+    "latitude": 60.17797,
+    "longitude": 24.78743,
+    "latlon": "latlon=60.17797,24.78743"
+  },
+  "3": {
+    "area": "Nuuksio",
+    "fmisid": 644148,
+    "latitude": 60.29128,
+    "longitude": 24.56782,
+    "latlon": "latlon=60.29128,24.56782"
+  },
+  "4": {
+    "area": "Kärpänen",
+    "fmisid": 10019905,
+    "latitude": 60.97465,
+    "longitude": 25.6202,
+    "latlon": "latlon=60.97465,25.6202"
+  },
+  "5": {
+    "area": "Hätilä",
+    "fmisid": 658702,
+    "latitude": 61.0,
+    "longitude": 24.49,
+    "latlon": "latlon=61,24.49"
+  },
+  "6": {
+    "area": "Juhannuskylä",
+    "fmisid": 6931107,
+    "latitude": 61.50124,
+    "longitude": 23.76478,
+    "latlon": "latlon=61.50124,23.76478"
+  },
+  "7": {
+    "area": "Hyvinkäänkylä",
+    "fmisid": 645421,
+    "latitude": 60.6,
+    "longitude": 24.8,
+    "latlon": "latlon=60.6,24.8"
+  },
+  "8": {
+    "weatherArea": "Inkeroinen",
+    "fmisid": 656624,
+    "latitude": 60.7,
+    "longitude": 26.81,
+    "latlon": "latlon=60.7,26.81"
+  }
+}
