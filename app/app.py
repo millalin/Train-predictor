@@ -35,7 +35,7 @@ def predict():
     select_line = int(select_line)
 
     print(inputs)
-    weatherPrediction = weather.give_prediction(inputs[2], inputs[3], inputs[4])
+    weatherPrediction = weather.give_prediction(inputs[1], inputs[2], inputs[3], inputs[4])
     print(weatherPrediction)  # 'rain', 'celcius', 'windGustSpeed', 'windSpeed'
     inputs.extend(weatherPrediction)
     inputs = [select_line] + inputs[1:1] + [select_station] + inputs[2:]  
