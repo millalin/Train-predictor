@@ -13,11 +13,13 @@ def give_prediction(stationId, month, day, hour):
     place = "latlon=60.3267,24.95675" # default place is Veromiehenkylä
     stationShortCode = ''
     weather_area = 0
+    station_name = ''
     with open("../utils/stations.json", 'r', encoding="utf-8") as f:
         stations = json.load(f)
         for station in stations:
             if station['stationShortCodeCategory'] == stationId:
                 stationShortCode = station['stationShortCode']
+                station_name = station['stationName']
                 break
     if stationShortCode != '':
         with open("../utils/weather_stations.json", 'r', encoding="utf-8") as f:
@@ -52,5 +54,5 @@ def give_prediction(stationId, month, day, hour):
     windGustSpeed = data['Wind gust']['value']
     windSpeed = data['Wind speed']['value']
 
-    weather = [rain, celcius, windGustSpeed, windSpeed]
+    weather = [rain, celcius, windGustSpeed, windSpeed, station_name, weather_station, time_of_day]
     return weather
