@@ -21,7 +21,7 @@ stations = create_stations_json()
 with open('../utils/lines.json', 'r') as f:
     lines = json.load(f)
 
-@app.route('/')
+@app.route('/home')
 def home():
     return render_template('index.html', stations=stations, lines=lines)
 
@@ -47,5 +47,10 @@ def predict():
     prediction_info = f'Date and time: {weatherPrediction[6].strftime("%d/%m/%Y %H:%M")}, train {lines.get(select_line_str)}, station {weatherPrediction[4]}{direction}'
     weather_info = f'Weather prediction for {weatherPrediction[5]} weather station: rain amount: {weatherPrediction[0]} mm/h, temperature: {weatherPrediction[1]} ℃, wind gusts: {weatherPrediction[2]} m/s, wind speed: {weatherPrediction[3]} m/s'
     return render_template('index.html', prediction_minutes='Predicted train delay {} minute(s)'.format(res), stations=stations, lines=lines, prediction_info=prediction_info, weather_info=weather_info)
+
+@app.route('/statistics', methods=['POST'])
+def statistics():
+    return render_template('statistics.html', stations=stations, lines=lines)
+
 if __name__ == "__main__":
     app.run(debug=True)
