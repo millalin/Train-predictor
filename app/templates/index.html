@@ -84,5 +84,14 @@ color: white;
 <p style="font-size:100%;"> {{ weather_info }}</p>
 <p style="font-size:200%;"> {{ prediction_minutes }}</p>
 </div>
+<br>
+<br>
+<br>
+<br>
+<div>
+  <form action="{{ url_for('statistics')}}"method="post">
+  <button type="submit" class="button">Statistics</button>
+  </form>
+</div>
 </body>
 </html>
