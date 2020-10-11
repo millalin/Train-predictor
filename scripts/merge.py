@@ -2,9 +2,9 @@ import os
 import glob
 import pandas as pd
 
-trains_data = pd.read_csv("data/clean/trains.csv", dtype={"commercialTrack": str})
+trains_data = pd.read_csv("../data/clean/trains.csv", dtype={"commercialTrack": str})
 
-path =r'data_weather'
+path =r'../data_weather'
 
 def get_df(fn, area):
     filenames = glob.glob(path + fn)
@@ -55,17 +55,17 @@ data_kouvola = wind(data_kouvola, data_wind_central)
 data_hyvinkaa = wind(data_hyvinkaa, data_wind_central)
 
 # Lahti missing wind values only from 2019 so getting those from different file with wind weather info from nearby area
-data_lahti_wind19 = get_one_file("./data_weather/wind/central/wind_hlinna_kouv_lahti_hyv_2019.csv")
-data_lahti_19 = get_one_file("./data_weather/lahti/weather_lahtiheinola-2019.csv")
-data_lahti_1718 = get_one_file("./data_weather/lahti/weather_lahti_2017-2018.csv")
+data_lahti_wind19 = get_one_file("../data_weather/wind/central/wind_hlinna_kouv_lahti_hyv_2019.csv")
+data_lahti_19 = get_one_file("../data_weather/lahti/weather_lahtiheinola-2019.csv")
+data_lahti_1718 = get_one_file("../data_weather/lahti/weather_lahti_2017-2018.csv")
 data_lahti_19 = wind(data_lahti_19,data_lahti_wind19)
 data_lahti = pd.concat([data_lahti_19, data_lahti_1718])
 data_lahti['weather_area'] = 4
 
 # Hämeenlinna missing wind values only from 2019 so getting those from different file with wind weather info from nearby area
-data_hameenlinna_wind19 = get_one_file("./data_weather/wind/central/wind_hlinna_kouv_lahti_hyv_2019.csv")
-data_hameenlinna_19 = get_one_file("./data_weather/hameenlinna/weather_hameenlinna_2019.csv")
-data_hameenlinna_1718 = get_one_file("./data_weather/hameenlinna/weather_hameenlinna2017-2018.csv")
+data_hameenlinna_wind19 = get_one_file("../data_weather/wind/central/wind_hlinna_kouv_lahti_hyv_2019.csv")
+data_hameenlinna_19 = get_one_file("../data_weather/hameenlinna/weather_hameenlinna_2019.csv")
+data_hameenlinna_1718 = get_one_file("../data_weather/hameenlinna/weather_hameenlinna2017-2018.csv")
 data_hameenlinna_19 = wind(data_hameenlinna_19,data_hameenlinna_wind19)
 data_hameenlinna = pd.concat([data_hameenlinna_19, data_hameenlinna_1718])
 data_hameenlinna['weather_area'] = 5
@@ -82,6 +82,6 @@ weather_data["hour"] = weather_data["hour"].astype(str).str.replace(":00","").as
 df = pd.merge(trains_data, weather_data, on= ['year', 'month', 'day', 'hour', 'weather_area'], how='left')
 df = df.dropna(axis=0, subset=['rain', 'celcius', 'windGustSpeed', 'windSpeed'])
 
-data_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data")
+data_folder = "../data"
 destination=os.path.join(data_folder, "merged", "trains_and_weather.csv")
 df.to_csv(destination, index = False)
