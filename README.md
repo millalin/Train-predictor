@@ -4,3 +4,5 @@ In a busy world like ours, it is important for people to be able to plan their t
 Data is collected from [Digitraffic API](https://www.digitraffic.fi/rautatieliikenne/) and from [Ilmatieteenlaitos](https://www.ilmatieteenlaitos.fi/avoin-data). Data used in project is between 2017-2019, containing over 50 million rows of train travels. Weather data is collected from 8 different weather stations. Some weather stations are missing wind speed so it is collected from nearby stations and merged to data. After cleaning and merging trains data to weather data used travel amounts and rows are about 10,5 million. 
 
 Weather predictions are also queried from [Ilmatieteenlaitos](https://www.ilmatieteenlaitos.fi/avoin-data), these can be used when making predictions about train lateness.
+
+App can be found on [Heroku](https://train-predictor.herokuapp.com/home)
