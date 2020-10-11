@@ -23,7 +23,7 @@ def update_stations_json(df):
         json.dump(stations, f, ensure_ascii=False)
 
 
-dataset = pd.read_csv('data/trains_and_weather.csv', low_memory=False)
+dataset = pd.read_csv('data/merged/trains_and_weather.csv', low_memory=False)
 
 update_stations_json(dataset)
 dataset["stationShortCode"] = dataset['stationShortCodeCategory']
@@ -36,10 +36,9 @@ lines = dict(zip( lineID, train ))
 with open("utils/lines.json", "w") as f:
     json.dump(lines, f)
 
-
-# For now selecting commuterLineID, stationShortCode, month, day, hour, direction, rain, celcius, windGustSpeed, windSpeed
+# For now selecting commuterLineID, stationShortCode, month, day, hour, direction, weekday, rain, celcius, windGustSpeed, windSpeed
 dataset = dataset.sample(25000)
-X = dataset.iloc[0:25000,lambda df: [0,1,6,7,8,13,14,15,16,17]]
+X = dataset.iloc[0:25000,lambda df: [0,1,6,7,8,13,14,15,16,17,18]]
 y = dataset.iloc[0:25000, 3]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y,
@@ -52,6 +51,5 @@ y_predtrain_rf = rf.predict(X_train)
 joblib.dump(rf, 'application/model')
 
 # Testing after building model
-
 model2 = joblib.load('application/model')
-print(model2.predict([[1,8, 6, 2, 22, 1, 0.0, 14.42, 3.77, 1.55]]))
+print(model2.predict([[1,8, 6, 2, 22, 1, 1, 0, 14, 4, 2]]))

@@ -4,6 +4,7 @@ import joblib
 from application.helpers import weather_for_model as weather
 import pandas as pd
 import json
+import datetime
 
 app = Flask(__name__)
 model = joblib.load('application/model')
@@ -26,8 +27,9 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-
     inputs = [int(x) for x in request.form.values()]
+    year = datetime.datetime.now().year
+    weekday = datetime.datetime(year=year, month=inputs[2], day=inputs[3]).weekday()
     select_station = request.form.get('station')
     select_station = int(select_station)
     select_line_str = request.form.get('lineID')
@@ -36,6 +38,7 @@ def predict():
     print(inputs)
     weatherPrediction = weather.give_prediction(inputs[1], inputs[2], inputs[3], inputs[4])
     print(weatherPrediction)  # rain, celcius, windGustSpeed, windSpeed, station_name, weather_station, time_of_day
+    inputs.append(weekday)
     inputs.extend(weatherPrediction[0:4])
     inputs = [select_line] + inputs[1:1] + [select_station] + inputs[2:]  
     features = [np.array(inputs)]
