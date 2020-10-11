@@ -33,8 +33,13 @@ dataset['commuterLineID'] = commuterLineID
 lineID = commuterLineID.drop_duplicates()
 lines = dict(zip( lineID, train ))
 
-with open("utils/lines.json", "w") as f:
-    json.dump(lines, f)
+dataset['celcius'] = dataset['celcius'].apply(np.int64)
+dataset['rain'] = dataset['rain'].apply(np.int64)
+dataset['windSpeed'] = dataset['windSpeed'].apply(np.int64)
+dataset['windGustSpeed'] = dataset['windGustSpeed'].apply(np.int64)
+
+with open("utils/lines.json", "w") as f:  
+    json.dump(lines, f) 
 
 # For now selecting commuterLineID, stationShortCode, month, day, hour, direction, weekday, rain, celcius, windGustSpeed, windSpeed
 dataset = dataset.sample(25000)
