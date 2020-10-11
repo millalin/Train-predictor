@@ -37,10 +37,12 @@ def predict():
     select_line = int(select_line_str)
 
     print(inputs)
-    weatherPrediction = weather.give_prediction(inputs[1], inputs[2], inputs[3], inputs[4])
-    print(weatherPrediction)  # rain, celcius, windGustSpeed, windSpeed, station_name, weather_station, time_of_day
+    weatherPrediction = weather.give_prediction(inputs[1], inputs[2], inputs[3], inputs[4])[0:4]
+    # convert weather predictions to int
+    weatherPrediction = list(map(int, weatherPrediction))
+    print(weatherPrediction)  # rain, celcius, windGustSpeed, windSpeed
     inputs.append(weekday)
-    inputs.extend(weatherPrediction[0:4])
+    inputs.extend(weatherPrediction)
     inputs = [select_line] + inputs[1:1] + [select_station] + inputs[2:]  
     features = [np.array(inputs)]
     print("feat ", features)
