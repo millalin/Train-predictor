@@ -5,9 +5,13 @@ from application.helpers import weather_for_model as weather
 import pandas as pd
 import json
 import datetime
+import os
+import boto3
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder= os.path.join(os.path.dirname(os.path.realpath(__file__)), "static"))
 model = joblib.load('application/model')
+bucket = os.environ['S3_BUCKET']
+
 
 def create_stations_json():
     df = pd.read_json("utils/stations.json")
@@ -17,6 +21,24 @@ def create_stations_json():
     return df.to_dict()['stationShortCodeCategory']
 
 stations = create_stations_json()
+
+@app.route("/map_features")
+def get_map_features():
+    key = request.args.get("geojson")
+    client = boto3.client("s3")
+    resp = client.get_object(Bucket=bucket, Key=key)
+    resp = resp['Body'].read().decode('utf-8')
+    response = app.response_class(
+        response=resp,
+        mimetype='application/json'
+    )
+    return response
+
+
+
+@app.route("/map")
+def map():
+    return render_template("map.html")
 
 with open('utils/lines.json', 'r') as f:
     lines = json.load(f)
