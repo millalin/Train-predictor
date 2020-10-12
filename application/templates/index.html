@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Train predictor</title>
+<style>
+h1 {text-align: center;}
+
+input[type=text], select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid rgb(196, 250, 223);
+border-radius: 4px;
+box-sizing: border-box;
+}
+input[type=submit]:hover {
+background-color: #afd4c8;
+}
+form { 
+margin: 0 auto; 
+width:500px;
+}
+div {
+border-radius: 50px;
+background-color: #c8e6dc;
+padding: 5px;
+margin: 0 auto; 
+width:500px;
+}
+
+.button {
+border: none;
+color: rgb(0, 2, 1);
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+font: arial;
+margin: 6px 3px;
+transition-duration: 0.4s;
+cursor: pointer;
+border: 3px solid #818685;
+background-color: #bbbebd;
+border-radius: 15px
+}
+
+.button:hover {
+background-color: #549e7f;
+color: white;
+}
+
+</style>
+</head>
+
+<body style="background: rgb(157, 206, 194);">
+<h1>Train predictor</h1>
+<div class="inputs">
+<br>
+
+<form action="{{ url_for('predict')}}"method="post">
+  <label for="sel1">Select train:</label>
+  <select name = "lineID">
+  {% for code, line in lines.items() %}
+    <option value= "{{ code }}">{{ line }}</option>
+  {% endfor %}
+  </select>
+  <label for="sel2">Select station:</label>
+  <select name = "station">
+  {% for station, v in stations.items() %}
+    <option value= "{{ v }}">{{ station }}</option>
+  {% endfor %}
+  </select>
+  <input type="text" name="month" placeholder="month (must be current in 2 days)" required="required" />
+  <input type="text" name="day" placeholder="day (must be within 48 hours)" required="required" />
+  <input type="text" name="hour" placeholder="hour (0-23 in in future of the day)" required="required" />
+  <input type="text" name="direction (0 or 1)" placeholder="direction" required="required" />
+  <button type="submit" class="button">Predict train delay</button>
+</form>
+<br>
+<p style="font-size:100%;"> {{ prediction_info }}</p>
+<p style="font-size:100%;"> {{ weather_info }}</p>
+<p style="font-size:200%;"> {{ prediction_minutes }}</p>
+</div>
+<br>
+<br>
+<div>
+  <form action="{{ url_for('statistics')}}"method="post">
+  <button type="submit" class="button">Statistics</button>
+  </form>
+</div>
+</body>
+</html>
