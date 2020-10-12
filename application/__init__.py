@@ -56,8 +56,9 @@ def predict():
 
     prediction = model.predict(features)
     res = int(prediction[0])
+    res_explained= {0: '0', 1:'0-3', 2: 'over 3'}
 
-    return render_template('index.html', prediction_minutes='Predicted train delay {} minute(s)'.format(res), stations=stations, lines=lines, prediction_info=prediction_info, weather_info=weather_info)
+    return render_template('index.html', prediction_minutes='Predicted train delay {} minute(s)'.format(res_explained.get(res)), stations=stations, lines=lines, prediction_info=prediction_info, weather_info=weather_info)
 
 @app.route('/statistics', methods=['POST'])
 def statistics():

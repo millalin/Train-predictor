@@ -4,6 +4,7 @@ import joblib
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import json
+import numpy as np
 
 
 def update_stations_json(df):
@@ -56,8 +57,6 @@ joblib.dump(rf, 'application/model')
 model2 = joblib.load('application/model')
 print(model2.predict([[1,8, 6, 2, 22, 1, 1, 0, 14, 4, 2]]))
 
-model2 = joblib.load('model')
+model2 = joblib.load('application/model')
 score = rf.score(X_test, y_test)
 print(score)
-
-
