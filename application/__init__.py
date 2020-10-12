@@ -4,6 +4,7 @@ import joblib
 from application.helpers import weather_for_model as weather
 import pandas as pd
 import json
+import datetime
 
 app = Flask(__name__)
 model = joblib.load('application/model')
@@ -26,8 +27,9 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-
     inputs = [int(x) for x in request.form.values()]
+    year = datetime.datetime.now().year
+    weekday = datetime.datetime(year=year, month=inputs[2], day=inputs[3]).weekday()
     select_station = request.form.get('station')
     select_station = int(select_station)
     select_line_str = request.form.get('lineID')
@@ -35,8 +37,11 @@ def predict():
 
     print(inputs)
     weatherPrediction = weather.give_prediction(inputs[1], inputs[2], inputs[3], inputs[4])
-    print(weatherPrediction)  # rain, celcius, windGustSpeed, windSpeed, station_name, weather_station, time_of_day
-    inputs.extend(weatherPrediction[0:4])
+    # convert weather predictions to int
+    used_weather_values = list(map(int, weatherPrediction[0:4]))
+    print(used_weather_values)  # rain, celcius, windGustSpeed, windSpeed
+    inputs.append(weekday)
+    inputs.extend(used_weather_values)
     inputs = [select_line] + inputs[1:1] + [select_station] + inputs[2:]  
     features = [np.array(inputs)]
     print("feat ", features)
@@ -51,8 +56,9 @@ def predict():
 
     prediction = model.predict(features)
     res = int(prediction[0])
+    res_explained= {0: '0', 1:'1-2', 2: 'over 3'}
 
-    return render_template('index.html', prediction_minutes='Predicted train delay {} minute(s)'.format(res), stations=stations, lines=lines, prediction_info=prediction_info, weather_info=weather_info)
+    return render_template('index.html', prediction_minutes='Predicted train delay {} minute(s)'.format(res_explained.get(res)), stations=stations, lines=lines, prediction_info=prediction_info, weather_info=weather_info)
 
 @app.route('/statistics', methods=['POST'])
 def statistics():

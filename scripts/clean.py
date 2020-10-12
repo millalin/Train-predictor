@@ -5,14 +5,14 @@ import datetime
 import json
 
 # Location of data directory
-data_folder = os.path.join(os.path.dirname(os.path.realpath(__file__)), "data")
+data_folder = "../data"
 json_files = glob.glob(os.path.join(data_folder, "raw", "*.json"))
 
 commuter_line_ids = ["Y","U","L","E","A","P","I","K","R","T","D","Z"]
 
 used_columns = ["commuterLineID", "stationShortCode", "commercialTrack", "differenceInMinutes", 
  				"weather_area", "year", "month", "day", "hour", "categoryCode", "categoryCodeId",
- 				"detailedCategoryCode", "detailedCategoryCodeId", "direction"]
+ 				"detailedCategoryCode", "detailedCategoryCodeId", "direction", "weekday"]
 
 
 with open("../utils/weather_stations.json") as f:
@@ -47,6 +47,7 @@ for json_file in json_files:
 	df["month"] = df["scheduledTime"].apply(lambda x: datetime.datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ").month)
 	df["day"] = df["scheduledTime"].apply(lambda x: datetime.datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ").day)
 	df["hour"] = df["scheduledTime"].apply(lambda x: datetime.datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ").hour)
+	df["weekday"] = df["scheduledTime"].apply(lambda x: datetime.datetime.strptime(x, "%Y-%m-%dT%H:%M:%S.%fZ").weekday())
 
 	df["categoryCode"] = df["causes"].apply(lambda x: get_cause_category("categoryCode", x))
 	df["categoryCodeId"] = df["causes"].apply(lambda x: get_cause_category("categoryCodeId", x))
