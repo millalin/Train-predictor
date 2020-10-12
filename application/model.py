@@ -42,9 +42,9 @@ with open("utils/lines.json", "w") as f:
     json.dump(lines, f) 
 
 # For now selecting commuterLineID, stationShortCode, month, day, hour, direction, weekday, rain, celcius, windGustSpeed, windSpeed
-dataset = dataset.sample(25000)
-X = dataset.iloc[0:25000,lambda df: [0,1,6,7,8,13,14,15,16,17,18]]
-y = dataset.iloc[0:25000, 3]
+dataset = dataset.sample(1000000)
+X = dataset.iloc[0:1000000,lambda df: [0,1,6,7,8,13,14,15,16,17,18]]
+y = dataset.iloc[0:1000000, 3]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                     train_size=0.80, test_size=0.20, random_state=66)
