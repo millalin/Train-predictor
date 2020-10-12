@@ -1,4 +1,3 @@
-import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import pickle
@@ -34,11 +33,6 @@ dataset['commuterLineID'] = commuterLineID
 lineID = commuterLineID.drop_duplicates()
 lines = dict(zip( lineID, train ))
 
-dataset['celcius'] = dataset['celcius'].apply(np.int64)
-dataset['rain'] = dataset['rain'].apply(np.int64)
-dataset['windSpeed'] = dataset['windSpeed'].apply(np.int64)
-dataset['windGustSpeed'] = dataset['windGustSpeed'].apply(np.int64)
-
 with open("../utils/lines.json", "w") as f:  
     json.dump(lines, f) 
 
@@ -59,5 +53,6 @@ joblib.dump(rf, 'model.z')
 # Testing after building model
 
 model2 = joblib.load('model.z')
-print(model2.predict([[1,8, 6, 2, 22, 1, 1, 0.0, 14.42, 3.77, 1.55]]))
+score = rf.score(X_test, y_test)
+print(score)
 
