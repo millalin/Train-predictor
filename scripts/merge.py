@@ -1,6 +1,7 @@
 import os
 import glob
 import pandas as pd
+import numpy as np
 
 trains_data = pd.read_csv("../data/clean/trains.csv", dtype={"commercialTrack": str})
 
@@ -81,6 +82,21 @@ weather_data = weather_data.rename(columns = {'Vuosi': 'year', 'Kk': 'month', 'P
 weather_data["hour"] = weather_data["hour"].astype(str).str.replace(":00","").astype(int)
 df = pd.merge(trains_data, weather_data, on= ['year', 'month', 'day', 'hour', 'weather_area'], how='left')
 df = df.dropna(axis=0, subset=['rain', 'celcius', 'windGustSpeed', 'windSpeed'])
+
+def get_category(x):
+    if x<= 0:
+        return 0
+    if (x>0) & (x<3):
+        return 1
+    else:
+        return 2
+
+
+df['celcius'] = df['celcius'].apply(np.int64)
+df['rain'] = df['rain'].apply(np.int64)
+df['windSpeed'] = df['windSpeed'].apply(np.int64)
+df['windGustSpeed'] = df['windGustSpeed'].apply(np.int64)
+df['differenceInMinutes'] = df['differenceInMinutes'].apply(lambda x: get_category(x))
 
 data_folder = "../data"
 destination=os.path.join(data_folder, "merged", "trains_and_weather.csv")

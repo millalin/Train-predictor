@@ -39,6 +39,7 @@ def predict():
     weatherPrediction = weather.give_prediction(inputs[1], inputs[2], inputs[3], inputs[4])
     # convert weather predictions to int
     used_weather_values = list(map(int, weatherPrediction[0:4]))
+    print(used_weather_values)  # rain, celcius, windGustSpeed, windSpeed
     inputs.append(weekday)
     inputs.extend(used_weather_values)
     inputs = [select_line] + inputs[1:1] + [select_station] + inputs[2:]  
