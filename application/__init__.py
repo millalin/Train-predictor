@@ -36,8 +36,8 @@ def get_map_features():
 
 
 
-@app.route("/map")
-def map():
+@app.route("/historical_data")
+def historical_data():
     return render_template("map.html")
 
 with open('utils/lines.json', 'r') as f:

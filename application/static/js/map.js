@@ -12,15 +12,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(mymap)
 mymap.setZoom(10)
 var url = `/map_features?geojson=${month}_${day}_${hour}_late_per_station.geojson`
-var set_map_values = function () {
-  url = `/map_features?geojson=${month}_${day}_${hour}_late_per_station.geojson`
 
-
-  $.ajax({
-    type: "GET",
-    url: url,
-    dataType: 'json',
-    success: function (response) {
       var geojsonMarkerOptions = function (late) {
         var late_prc = late * 100
 
@@ -118,6 +110,17 @@ var set_map_values = function () {
         }
 
       };
+
+
+var set_map_values = function () {
+  url = `/map_features?geojson=${month}_${day}_${hour}_late_per_station.geojson`
+
+
+  $.ajax({
+    type: "GET",
+    url: url,
+    dataType: 'json',
+    success: function (response) {
       mymap.removeLayer(geojsonLayer)
      geojsonLayer = L.geoJSON(response, {
         pointToLayer: function (feature, latlng) {
@@ -137,21 +140,10 @@ $.ajax({
   dataType: 'json',
   success: function (response) {
 
-     var geojsonMarkerOptions = function() {
-            return {
-            radius: 8,
-            fillColor: "#ffffcc",
-            color: "#000",
-            weight: 1,
-            opacity: 1,
-            fillOpacity: 0.6
-          }
-        }
-
 
   geojsonLayer = L.geoJSON(response, {
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng, geojsonMarkerOptions);
+        return L.circleMarker(latlng, geojsonMarkerOptions(feature.properties.late_prc));
       }
     }).addTo(mymap);
     $("#info").fadeOut(500);
@@ -170,7 +162,7 @@ set_map_values()
 
 var slider_hour = document.getElementById("hour");
 hour = slider_hour.value
-document.getElementById("hour_text").innerHTML = hour;
+document.getElementById("hour_text").innerHTML = `${hour}:00-${hour}:59`;
 set_map_values()
 
 
@@ -190,7 +182,7 @@ slider_day.oninput = function () {
 
 slider_hour.oninput = function () {
   hour = this.value;
-  document.getElementById("hour_text").innerHTML = hour;
+  document.getElementById("hour_text").innerHTML = `${hour}:00-${hour}:59`;
   set_map_values()
 
 } 
