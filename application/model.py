@@ -45,10 +45,9 @@ dataset = dataset.sample(2500000)
 X = dataset.iloc[0:2500000,lambda df: [0,1,6,7,8,13,14,15,16,17,18]]
 y = dataset.iloc[0:2500000, 3]
 
-X_train, X_test, y_train, y_test = train_test_split(X, y,
-                                                    train_size=0.80, test_size=0.20, random_state=66)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.80, test_size=0.20, random_state=66)
 
-rf = RandomForestClassifier(max_depth=12, random_state=66, n_estimators=100)
+rf = RandomForestClassifier(max_depth=14, n_estimators=50, max_features=0.70, criterion='gini', bootstrap=False,  min_samples_leaf=10, min_samples_split=8)
 rf.fit(X_train, y_train)
 
 joblib.dump(rf, 'application/model')
