@@ -6,3 +6,5 @@ Data is collected from [Digitraffic API](https://www.digitraffic.fi/rautatieliik
 Weather predictions are also queried from [Ilmatieteenlaitos](https://www.ilmatieteenlaitos.fi/avoin-data), these can be used when making predictions about train lateness.
 
 App can be found on [Heroku](https://train-predictor.herokuapp.com/home)
+
+[Instructions](https://github.com/millalin/Train-predictor/blob/master/instructions.md) to train predictor use

@@ -54,5 +54,5 @@ def give_prediction(stationId, month, day, hour):
     windGustSpeed = data['Wind gust']['value']
     windSpeed = data['Wind speed']['value']
 
-    weather = [rain, celcius, windGustSpeed, windSpeed, station_name, weather_station, time_of_day]
+    weather = [rain, celcius, windGustSpeed, windSpeed, station_name, weather_station, time_of_day, weather_area]
     return weather

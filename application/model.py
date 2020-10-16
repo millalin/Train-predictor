@@ -40,22 +40,21 @@ dataset['windGustSpeed'] = dataset['windGustSpeed'].apply(np.int64)
 with open("utils/lines.json", "w") as f:  
     json.dump(lines, f) 
 
-# For now selecting commuterLineID, stationShortCode, month, day, hour, direction, weekday, rain, celcius, windGustSpeed, windSpeed
+# For now selecting commuterLineID, stationShortCode, weather_area, year, month, day, hour, direction, weekday, rain, celcius, windGustSpeed, windSpeed
 dataset = dataset.sample(2500000)
-X = dataset.iloc[0:2500000,lambda df: [0,1,6,7,8,13,14,15,16,17,18]]
+X = dataset.iloc[0:2500000,lambda df: [0,1,4,5,6,7,8,13,14,15,16,17,18]]
 y = dataset.iloc[0:2500000, 3]
 
-X_train, X_test, y_train, y_test = train_test_split(X, y,
-                                                    train_size=0.80, test_size=0.20, random_state=66)
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.80, test_size=0.20, random_state=66)
 
-rf = RandomForestClassifier(max_depth=12, random_state=66, n_estimators=100)
+rf = RandomForestClassifier(max_depth=14, n_estimators=50, max_features=0.70, criterion='gini', bootstrap=False,  min_samples_leaf=10, min_samples_split=8)
 rf.fit(X_train, y_train)
 
 joblib.dump(rf, 'application/model')
 
 # Testing after building model
 model2 = joblib.load('application/model')
-print(model2.predict([[1,8, 6, 2, 22, 1, 1, 0, 14, 4, 2]]))
+print(model2.predict([[1,8,1,2017, 6, 2, 22, 1, 1, 0, 14, 4, 2]]))
 
 model2 = joblib.load('application/model')
 score = rf.score(X_test, y_test)
