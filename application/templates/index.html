@@ -76,7 +76,13 @@ color: white;
   <input type="text" name="month" placeholder="month (must be current in 2 days)" required="required" />
   <input type="text" name="day" placeholder="day (must be within 48 hours)" required="required" />
   <input type="text" name="hour" placeholder="hour (0-23 in in future of the day)" required="required" />
-  <input type="text" name="direction (0 or 1)" placeholder="direction" required="required" />
+  <label for="sel3">Select direction:</label>
+  <select name = "direction">
+  {% for direction, v in directions.items() %}
+    <option value= "{{ v }}">{{ direction }}</option>
+  {% endfor %}
+  </select>
+
   <button type="submit" class="button">Predict train delay</button>
 </form>
 <br>
