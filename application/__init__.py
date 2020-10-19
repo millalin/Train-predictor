@@ -10,7 +10,7 @@ import boto3
 
 app = Flask(__name__, static_folder= os.path.join(os.path.dirname(os.path.realpath(__file__)), "static"))
 model = joblib.load('application/model')
-#bucket = os.environ['S3_BUCKET']
+bucket = os.environ['S3_BUCKET']
 
 
 def create_stations_json():
