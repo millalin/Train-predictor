@@ -73,9 +73,9 @@ color: white;
     <option value= "{{ v }}">{{ station }}</option>
   {% endfor %}
   </select>
-  <input type="text" name="month" placeholder="month (must be current in 2 days)" required="required" />
-  <input type="text" name="day" placeholder="day (must be within 48 hours)" required="required" />
-  <input type="text" name="hour" placeholder="hour (0-23 in in future of the day)" required="required" />
+  <input type="text" name="month" placeholder="month (1-12, must be current within 2 days)" required="required" />
+  <input type="text" name="day" placeholder="day (1-31, must be within 48 hours)" required="required" />
+  <input type="text" name="hour" placeholder="hour (0-23, must be a future time)" required="required" />
   <label for="sel3">Select direction:</label>
   <select name = "direction">
   {% for direction, v in directions.items() %}
